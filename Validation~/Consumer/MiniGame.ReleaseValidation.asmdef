@@ -1,0 +1,5 @@
+{
+  "name": "MiniGame.ReleaseValidation",
+  "references": ["MiniGame.Framework.Foundation", "MiniGame.Framework.Runtime", "MiniGame.Basic.Domain", "MiniGame.Basic.Presentation", "UniTask", "Unity.ugui"],
+  "autoReferenced": false
+}

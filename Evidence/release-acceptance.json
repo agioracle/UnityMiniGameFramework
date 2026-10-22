@@ -1,0 +1,484 @@
+{
+  "schema": 1,
+  "date": "2026-10-22",
+  "status": "VerifiedLocalPreviewWithCleanupWarning",
+  "recommendedVersion": "0.1.3",
+  "support": {
+    "unity": "2022.3.62f3",
+    "backend": "macOS Development Mono",
+    "input": "legacy"
+  },
+  "install": {
+    "source": "frozen suite installer CLI, no copied Library or source ProjectSettings",
+    "baseline": "0.1.2",
+    "sample": "imported Basic"
+  },
+  "upgrade": {
+    "from": "0.1.2",
+    "to": "0.1.3",
+    "rollbackTo": "0.1.2",
+    "consumerSourceUnchanged": true,
+    "schemaUnchanged": true,
+    "preservedFileCount": 71,
+    "preservedFileHashes": {
+      "Assets/Consumer.meta": "89d076ea83c89f36c859f63931f24371e14a0135f8718b0f4fc97bc8c8957d84",
+      "Assets/Samples.meta": "38522d69155ba53a9693e7cfd0affee8e3ae3ecedc506ea4be8d4a83fd7898a5",
+      "Assets/Samples/MiniGame Framework.meta": "95979a2a44d262aecac6fb88bf2d81a06efee39ef1a9387b2dc3efce47a7c545",
+      "Assets/Consumer/MiniGame.ReleaseValidation.asmdef.meta": "7efc35269a06bfaa67569b460ef80dfa5271f49ad62bd1d3f0d2cfe079d08412",
+      "Assets/Consumer/MiniGame.ReleaseValidation.asmdef": "2064327c76c0783411a15a851f051a94803379d7c2cb0f7354ca8894dbc0b598",
+      "Assets/Consumer/Editor.meta": "d203beda91717c522452cc3e8fe3679aedb5daee44fdca5f4a9d242f3527577a",
+      "Assets/Consumer/ReleaseConsumer.cs.meta": "5cda9a854feb69690540e7cfacc36418ac520947c8115988da430504928addc2",
+      "Assets/Consumer/ReleaseConsumer.cs": "d6280da6b3ef30237bee9f46ccf421831f0b6e9c08310596303397fa456affc0",
+      "Assets/Consumer/Tests.meta": "ad5a808221d683ca21752a049f93a77a84900c5c70b59353822e6c4bf7bdddbf",
+      "Assets/Samples/MiniGame Framework/Basic.meta": "e9f84b54954520076b3ef0bd8522fe8fee97b0150aee6cf3d7c0c2e2803e598c",
+      "Assets/Samples/MiniGame Framework/Basic/Presentation.meta": "f2dc49541457e71781ce0fc1a3a6a91b04a73497eba94f8022347dfec54386d4",
+      "Assets/Samples/MiniGame Framework/Basic/Tests.meta": "2a81ad00c18ea24b7d65a3c26e1b33b01b32dfa459e7449852936ece2745816d",
+      "Assets/Samples/MiniGame Framework/Basic/Domain.meta": "89dbcaa7dc540ff5401b15739fbccb2e5ad91d6de053f2ae04469abba005b05c",
+      "Assets/Samples/MiniGame Framework/Basic/Content.meta": "720d769a691d86efd5d79fcbd3a594104151cc3ade55ced3d492e9ee140c4968",
+      "Assets/Samples/MiniGame Framework/Basic/Scenes.meta": "8674b1647242559d75989f8b1205e17a9e132f23be7f34dfc842e004feb911f0",
+      "Assets/Samples/MiniGame Framework/Basic/Scenes/Boot.unity.meta": "72aaa1ca0b572d4f61baa42f6a09e9523adabd4df4c834c45e79665464e9fd3a",
+      "Assets/Samples/MiniGame Framework/Basic/Scenes/Boot.unity": "081ac920d958be1b2b9363219d8731beec1f9e25ba3a3bdc6eda7eb953cb7465",
+      "Assets/Samples/MiniGame Framework/Basic/Tests/EditMode.meta": "4b8966dc9578633e1ef3791d5543e31feb12b7122a6074cab123497744b8f834",
+      "Assets/Samples/MiniGame Framework/Basic/Tests/PlayMode.meta": "70e88e2d2171e6c77d54cd6e6ff16e99e5f67fa1fc9299f6993fa98455978ec7",
+      "Assets/Samples/MiniGame Framework/Basic/Content/Rounded.asset.meta": "3b860fb809b66d489dbac71d0ab38415c307e2cf5451de90c741dddb0251d319",
+      "Assets/Samples/MiniGame Framework/Basic/Content/Rounded.asset": "dd461b5f126b8f51bc8fa23282189538139bc6d2f8ac5e59bf829a27c65cf301",
+      "Assets/Samples/MiniGame Framework/Basic/Domain/LevelRules.cs.meta": "dab7ce391c62c1c521bd1f00c803a5acf8a9609a8786e39b33897a44e8900f14",
+      "Assets/Samples/MiniGame Framework/Basic/Domain/LevelRules.cs": "c103908322e298b3eecbd0e2f4781140b6e94058834a41a72876888487ed15fd",
+      "Assets/Samples/MiniGame Framework/Basic/Domain/MiniGame.Basic.Domain.asmdef": "331d593ffe7565904963a6bc32271b71d2523361995ddc1178d903d282eb3fcf",
+      "Assets/Samples/MiniGame Framework/Basic/Domain/MiniGame.Basic.Domain.asmdef.meta": "03c61d1cad05a85b2778c0c9305c82d47ae4bd99cfaf3d5b4f3d50fe9a2a9bca",
+      "Assets/Samples/MiniGame Framework/Basic/Presentation/MiniGame.Basic.Presentation.asmdef.meta": "7b25db5e1c02bf9ef266a342b3755108a8be987f8c7a18ac9c74f0adbb0f231c",
+      "Assets/Samples/MiniGame Framework/Basic/Presentation/BasicGameView.cs": "515a1513eeabacc76adaa98b709a4edc0c17a707ce3a2f7dfc8dfa8f0c5aa040",
+      "Assets/Samples/MiniGame Framework/Basic/Presentation/BasicGameView.cs.meta": "06065d764a9c1f2ba27fd6900c5d94702140dd6ee3dae40513766f7ccbdca942",
+      "Assets/Samples/MiniGame Framework/Basic/Presentation/MiniGame.Basic.Presentation.asmdef": "f81a1d4ce20a2b5f0ba1de132ba88f570f257a6b45ba35b9c783d936f03c3381",
+      "Assets/Samples/MiniGame Framework/Basic/Presentation/BasicProgress.cs": "2a4ca853e78e9699df4b61213272b8aeaedd04075643196a7aa5143eff8f0096",
+      "Assets/Samples/MiniGame Framework/Basic/Presentation/BasicLevelConfig.cs": "80399cb7528be29842a5856e422123a1caae822678c69fbddecb6d99b7be4d85",
+      "Assets/Samples/MiniGame Framework/Basic/Presentation/BasicProgress.cs.meta": "fb225013bb6b9b91f51f46e0f45827b50252f82fc624421ec007b9340e675367",
+      "Assets/Samples/MiniGame Framework/Basic/Presentation/BasicLevelConfig.cs.meta": "9703bf8a1ee4a3a87757fa6b47dfeb49ad57e9cf92f29f6cafaa0198dd6ac82c",
+      "Assets/Samples/MiniGame Framework/Basic/Tests/PlayMode/MiniGame.Basic.PlayMode.Tests.asmdef": "5d17ee06feea84fa551b803b593333bf8b0780439ec3605bf4a8ce655d1bc8a1",
+      "Assets/Samples/MiniGame Framework/Basic/Tests/PlayMode/MiniGame.Basic.PlayMode.Tests.asmdef.meta": "51666ebf1e177560fd43886d2c0fce80be7cf215dfaad94ca7e909b9552597f7",
+      "Assets/Samples/MiniGame Framework/Basic/Tests/PlayMode/PlayableLoopTests.cs": "85f794e8d431499de7836b7692e1524e4d3a1745c369ec9a56d974ceee2f9807",
+      "Assets/Samples/MiniGame Framework/Basic/Tests/PlayMode/PlayableLoopTests.cs.meta": "d85c46cbacf329e774bda89a52b316ff5c310e87b4d4e3cfc30b74801f6c8a79",
+      "Assets/Samples/MiniGame Framework/Basic/Tests/EditMode/LevelRulesTests.cs.meta": "a60082ddd71832b128cacbf39aae0db4978baa104bb1a61cd48f1047bb389619",
+      "Assets/Samples/MiniGame Framework/Basic/Tests/EditMode/MiniGame.Basic.EditMode.Tests.asmdef": "13ceb29d775ba23e6b71b017f288e1f7a44a6774a501b58d56a8fe5ab9510f6e",
+      "Assets/Samples/MiniGame Framework/Basic/Tests/EditMode/LevelRulesTests.cs": "baa3a775c5d59e2aee3f78cc67386b11e783dffeba5b650e58a745ca200ac67b",
+      "Assets/Samples/MiniGame Framework/Basic/Tests/EditMode/MiniGame.Basic.EditMode.Tests.asmdef.meta": "a0adebb9e01fe1aa410f79981a3e367f2c52081d0899db2dbae8eecc7d397098",
+      "Assets/Consumer/Tests/ReleaseUpgradeTests.cs.meta": "db327330aef616046df60319d6e398806fc61dbe768dd5f283961fa8455b2050",
+      "Assets/Consumer/Tests/MiniGame.ReleaseValidation.Tests.asmdef": "830cd50174858a9394a57d1460d24a6ba4c8de87428b3e684ecb17de64a5b252",
+      "Assets/Consumer/Tests/MiniGame.ReleaseValidation.Tests.asmdef.meta": "a986dc530f63d8fa0e40f618880e8b1891f8452fcf7933f7952cec8d13678e90",
+      "Assets/Consumer/Tests/ReleaseUpgradeTests.cs": "19cb0ba29d3bbdc1b34bcb805f78e4e26d17c5d320de4434652baf8362df44bc",
+      "Assets/Consumer/Editor/MiniGame.ReleaseValidation.Editor.asmdef": "6f974cb6e3e78513d074585654e1546619a72f431695ce12c3a0ffc5281e7172",
+      "Assets/Consumer/Editor/ReleaseValidationBuilder.cs.meta": "c2398db24f6026b05387cdfa1265b8e9ba3fa6bcfaa5fac0867f60efdf966291",
+      "Assets/Consumer/Editor/MiniGame.ReleaseValidation.Editor.asmdef.meta": "62c9dac9393ff80277090e365b6eb771b3b149e7982ac1de2f1f349c89205513",
+      "Assets/Consumer/Editor/ReleaseValidationBuilder.cs": "ee0ef68b366f88c3e12b4a78d36f127d4501e00cd3686111213b624058140c79",
+      "ProjectSettings/ProjectSettings.asset": "a394034783b0974f5328a79a1bc307ab4fe5ad5c6dc368bc4c798ed1543fb5ed",
+      "ProjectSettings/InputManager.asset": "d0f454ddb880912abcae92e3e12957a7446786ba89e24937e019ff3bbc0d4300",
+      "ProjectSettings/TimeManager.asset": "1a83e54adbbda7c9f4851103a0c6ab7f6448a3343d4ea5b7620452fa08416ecd",
+      "ProjectSettings/VersionControlSettings.asset": "e7bda45bf7a394745fee1316e6c71fa676004d591ad1f3aa247fd3e4ceb86071",
+      "ProjectSettings/SceneTemplateSettings.json": "5baf593374ad67246277a435d8d0ded7167696eef6e05d2d245670e490625d8c",
+      "ProjectSettings/GraphicsSettings.asset": "96fbec3a726513347293fb201477836277ade290a0bd7bd473cea90ffe896820",
+      "ProjectSettings/PresetManager.asset": "29c125923fe6e29f90190d4fce1c82d660e7051546e2c9d02908d18c9cf2436c",
+      "ProjectSettings/UnityConnectSettings.asset": "d6034acbef6c9e3179866486c31eab81fcbe5e7ed350ce71e0fa2b1449b77109",
+      "ProjectSettings/EditorSettings.asset": "d853eebd40ee532398333bac1bf7ac668eca3b831b6fc7d0887d7602f04e881a",
+      "ProjectSettings/EditorBuildSettings.asset": "1942c088ddfeeef348fdf12390e2a2d6da51056e197458d67969d44e7b2cbbd3",
+      "ProjectSettings/ClusterInputManager.asset": "40e65dd214bf254955d2c8829ca8ce2130fd3510485560ce012e9a1ddd93e623",
+      "ProjectSettings/TagManager.asset": "8e18b1c820e9c09e16bbd1f1b7842e9fb3b0158a0921b0964e0b8fa12c6e2c01",
+      "ProjectSettings/NavMeshAreas.asset": "7ebbf8f53b8033104e1878b95ca07a28d0954092d81c220f14196a42f651e658",
+      "ProjectSettings/Physics2DSettings.asset": "531861618163b01648a075414f6e864506ad8fe0a0d4d0096aa1fbbfcd3937dc",
+      "ProjectSettings/AudioManager.asset": "9a554916fe138ebcad8443ee9b079363ecc72795c39d0e80f5f7ca99e2c6f5e7",
+      "ProjectSettings/VFXManager.asset": "3f31266c7c1910447586e71b041dabd58d8371715ac3142d3e38ace46121f4ab",
+      "ProjectSettings/DynamicsManager.asset": "62fd35da36080a098d3e9f90cf4af6c655fe582091c33e505b812cf9aa36fee1",
+      "ProjectSettings/QualitySettings.asset": "944b52d523bcb15b945bc80924b9289f59185ab19bce8a00e99eec345bde6440",
+      "ProjectSettings/MemorySettings.asset": "1e8379a461b10ae09f3f696911088c16875d63e87ed5f2d95df9e1892703f9fd",
+      "ProjectSettings/ProjectVersion.txt": "b51164d22c4d2716ba8aee7f0b59d6b7dd0efa8552fd1db2a8c3b123fae3a1ec",
+      "Builds/ConsumerSave/upgrade.b.json": "8d13ea8ee794197f482876b049afb68493b8c9196f84e72ed5ded5bdb4b012a9",
+      "Builds/SampleSave/basic_progress.b.json": "a113d44524406d63bcd77057322b889338bfa466eebe7e591cfa4a1dba3b8646"
+    }
+  },
+  "runs": [
+    {
+      "phase": "baseline",
+      "runId": "20261022-034720-2b525c95",
+      "mode": "EditMode",
+      "total": 22,
+      "passed": 22,
+      "exit": 0,
+      "xmlSha256": "23f9b01e1191b27283cdca0ae1bc87ce3b02146130a2cb743a89647805868728",
+      "tests": [
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.CallbackBudgetLeavesRemainingWorkForLater",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.CallbackExceptionCanBeObservedWithoutDroppingOtherTimers",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.DisposeInsideResetDestroysReturningObject",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.FailedEnterLeavesMachineStopped",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.PauseOwnersReleaseOnlyThemselves",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.PoolCapacityAndDuplicateReturnsAreChecked",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.PoolFactoryCannotRentRecursively",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.PoolShutdownAttemptsEveryRelease",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.RepeatingTimerDoesNotCatchUpAfterLongFrame",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.ReusedTimerSlotRejectsOldHandle",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.ScaledAndUnscaledTimersAreIndependent",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.StateTransitionIsExplicitAndDuplicateIsNoOp",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.TimerBudgetDoesNotStarveHigherSlots",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.TimerCapacityAndInvalidTimeAreRejected",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.TimerCreatedInsideCallbackWaitsForNextTick",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.StoreTests.AllCorruptDataIsNotAutomaticallyOverwritten",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.StoreTests.BoundaryPayloadDoesNotGainUnexpectedBomBytes",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.StoreTests.KeysCannotTraverseDirectories",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.StoreTests.LocalizationCopiesDataAndFallsBack",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.StoreTests.MigrationIsExplicitAndDoesNotDestroyOldSnapshot",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.StoreTests.NewSchemaCannotBeOverwrittenByOldClient",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.StoreTests.SaveRoundTripAndRecoverOlderValidSnapshot",
+          "result": "Passed"
+        }
+      ]
+    },
+    {
+      "phase": "baseline",
+      "runId": "20261022-034720-2b525c95",
+      "mode": "PlayMode",
+      "total": 13,
+      "passed": 13,
+      "exit": 0,
+      "xmlSha256": "4c28b6704d0210718d99b138067c17d134e81cbe4f2054c6d71baf84fdb40061",
+      "tests": [
+        {
+          "name": "MiniGame.Examples.Basic.Tests.PlayableLoopTests.DisabledViewDoesNotReceiveButtonActions",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Examples.Basic.Tests.PlayableLoopTests.PauseBlocksActionsAndViewCanRebind",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Examples.Basic.Tests.PlayableLoopTests.RealButtonsCompleteAndRestartRound",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FrameworkGapTests.BackgroundBindingAndClearAreRejectedBeforeAccessingUnityObjects",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FrameworkGapTests.ClearDuringMultiValueSynchronousSubscribeStopsOldRendering",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FrameworkGapTests.MissingGlyphSelectsCoveringFallbackWithoutMutatingFontAssets",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FrameworkGapTests.RepeatedCoverStateStillCorrectsActualActivationWithoutDuplicateEvents",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.RuntimeLifecycleTests.CancellationRollsBackInitialization",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.RuntimeLifecycleTests.DisplaySubscriptionsEndOnDisableAndRebindToCurrentValue",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.RuntimeLifecycleTests.DisposeDuringInitializationDoesNotBecomeReady",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.RuntimeLifecycleTests.RuntimeInitializesAndStopsIdempotently",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.ReleaseValidation.Tests.ReleaseUpgradeTests.ImportedSampleWinsAndProgressSurvivesPackageUpgrade",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.ReleaseValidation.Tests.ReleaseUpgradeTests.UnchangedConsumerReadsAndPreservesItsOwnSaveSchema",
+          "result": "Passed"
+        }
+      ]
+    },
+    {
+      "phase": "upgrade",
+      "runId": "20261022-034900-0572e96e",
+      "mode": "EditMode",
+      "total": 22,
+      "passed": 22,
+      "exit": 0,
+      "xmlSha256": "a475637218ad70f8f0c2229b244384bf07b928cc01b2ed114630d8dbc2c0bdef",
+      "tests": [
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.CallbackBudgetLeavesRemainingWorkForLater",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.CallbackExceptionCanBeObservedWithoutDroppingOtherTimers",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.DisposeInsideResetDestroysReturningObject",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.FailedEnterLeavesMachineStopped",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.PauseOwnersReleaseOnlyThemselves",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.PoolCapacityAndDuplicateReturnsAreChecked",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.PoolFactoryCannotRentRecursively",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.PoolShutdownAttemptsEveryRelease",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.RepeatingTimerDoesNotCatchUpAfterLongFrame",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.ReusedTimerSlotRejectsOldHandle",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.ScaledAndUnscaledTimersAreIndependent",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.StateTransitionIsExplicitAndDuplicateIsNoOp",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.TimerBudgetDoesNotStarveHigherSlots",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.TimerCapacityAndInvalidTimeAreRejected",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FoundationTests.TimerCreatedInsideCallbackWaitsForNextTick",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.StoreTests.AllCorruptDataIsNotAutomaticallyOverwritten",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.StoreTests.BoundaryPayloadDoesNotGainUnexpectedBomBytes",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.StoreTests.KeysCannotTraverseDirectories",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.StoreTests.LocalizationCopiesDataAndFallsBack",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.StoreTests.MigrationIsExplicitAndDoesNotDestroyOldSnapshot",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.StoreTests.NewSchemaCannotBeOverwrittenByOldClient",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.StoreTests.SaveRoundTripAndRecoverOlderValidSnapshot",
+          "result": "Passed"
+        }
+      ]
+    },
+    {
+      "phase": "upgrade",
+      "runId": "20261022-034900-0572e96e",
+      "mode": "PlayMode",
+      "total": 13,
+      "passed": 13,
+      "exit": 0,
+      "xmlSha256": "cbe005fbe7e86b8f5bf7dc2e075c2f44919b7a1bb207c4523981a2754c537084",
+      "tests": [
+        {
+          "name": "MiniGame.Examples.Basic.Tests.PlayableLoopTests.DisabledViewDoesNotReceiveButtonActions",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Examples.Basic.Tests.PlayableLoopTests.PauseBlocksActionsAndViewCanRebind",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Examples.Basic.Tests.PlayableLoopTests.RealButtonsCompleteAndRestartRound",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FrameworkGapTests.BackgroundBindingAndClearAreRejectedBeforeAccessingUnityObjects",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FrameworkGapTests.ClearDuringMultiValueSynchronousSubscribeStopsOldRendering",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FrameworkGapTests.MissingGlyphSelectsCoveringFallbackWithoutMutatingFontAssets",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.FrameworkGapTests.RepeatedCoverStateStillCorrectsActualActivationWithoutDuplicateEvents",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.RuntimeLifecycleTests.CancellationRollsBackInitialization",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.RuntimeLifecycleTests.DisplaySubscriptionsEndOnDisableAndRebindToCurrentValue",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.RuntimeLifecycleTests.DisposeDuringInitializationDoesNotBecomeReady",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.Framework.Tests.RuntimeLifecycleTests.RuntimeInitializesAndStopsIdempotently",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.ReleaseValidation.Tests.ReleaseUpgradeTests.ImportedSampleWinsAndProgressSurvivesPackageUpgrade",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.ReleaseValidation.Tests.ReleaseUpgradeTests.UnchangedConsumerReadsAndPreservesItsOwnSaveSchema",
+          "result": "Passed"
+        }
+      ]
+    },
+    {
+      "phase": "rollback",
+      "runId": "rollback-confirmed-20261022",
+      "mode": "PlayMode",
+      "total": 2,
+      "passed": 2,
+      "exit": 0,
+      "xmlSha256": "8bffb7d64c46a5afeb7e4ac3be8e815aac00bdb57a005ac993d21021d65525d8",
+      "tests": [
+        {
+          "name": "MiniGame.ReleaseValidation.Tests.ReleaseUpgradeTests.ImportedSampleWinsAndProgressSurvivesPackageUpgrade",
+          "result": "Passed"
+        },
+        {
+          "name": "MiniGame.ReleaseValidation.Tests.ReleaseUpgradeTests.UnchangedConsumerReadsAndPreservesItsOwnSaveSchema",
+          "result": "Passed"
+        }
+      ]
+    }
+  ],
+  "player": {
+    "build": "Succeeded",
+    "bytes": 221395305,
+    "backend": "Mono2x",
+    "smoke": {
+      "passed": true,
+      "error": "",
+      "unityVersion": "2022.3.62f3"
+    },
+    "exit": 0
+  },
+  "suites": [
+    {
+      "version": "0.1.2",
+      "manifestSha256": "87e545b625adbef2f007335040acdc78f4dd3df371f242ef25f59cc32271e61a",
+      "archiveSha256": "3705abbed5254918703f2e3b554d74057bd32d597b09f7348f70e3819cd22aab"
+    },
+    {
+      "version": "0.1.3",
+      "manifestSha256": "3de22fd174b052bb809de520ef98a212c121f5405d5356b623b9ce01812cea0f",
+      "archiveSha256": "e9cba388b83bbff2b37264049787176bfea249c7d36667bab91878d85024c2f9"
+    }
+  ],
+  "cleanup": {
+    "warning": "Rollback transaction committed; IDE bulk-delete approval interrupted backup cleanup. User confirmed; independent read-only consumer tests passed. Backup retained, original failed report not rewritten.",
+    "retainedBackupFiles": 324
+  },
+  "previousFailures": [
+    "0.1.0 clean compile missing built-in Audio dependency",
+    "0.1.1 sample consumer test not discovered; not an upgrade baseline"
+  ],
+  "toolTests": {
+    "finalCount": 7,
+    "passed": 7,
+    "scope": "current development repository tool selection"
+  },
+  "notClaimed": [
+    "Remote commit, tag, push, GitHub Release or Git URL installation",
+    "IL2CPP, WebGL, mobile or mini-game SDK support",
+    "Full performance load, memory-growth attribution, target cold cache or approved budgets",
+    "Every API/service or entire project regression"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "MiniGame.Framework.Reactive",
+  "rootNamespace": "MiniGame.Framework.Reactive",
+  "references": ["R3.Unity"],
+  "overrideReferences": true,
+  "precompiledReferences": ["R3.dll"],
+  "autoReferenced": false
+}

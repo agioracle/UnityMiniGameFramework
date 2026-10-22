@@ -1,0 +1,10 @@
+Builds/
+BuildWorkspaces~/
+Releases/
+Library/
+Temp/
+Logs/
+UserSettings/
+__pycache__/
+*.pyc
+.DS_Store

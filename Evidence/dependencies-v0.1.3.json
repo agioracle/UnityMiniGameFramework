@@ -1,0 +1,7 @@
+{
+  "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2e993ff18f28c931602a07292df0b0804eebef99",
+  "com.cysharp.r3": "https://github.com/Cysharp/R3.git?path=src/R3.Unity/Assets/R3.Unity#329ca7915713417f2e0837b0e0a80b4da074db4a",
+  "com.tuyoogame.yooasset": "https://github.com/tuyoogame/YooAsset.git?path=Assets/YooAsset#101236db8a58a327071ff1ab35d28bc1535ca1c1",
+  "com.unity.ugui": "1.0.0",
+  "com.unity.textmeshpro": "3.0.7"
+}

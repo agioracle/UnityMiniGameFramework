@@ -1,0 +1,7 @@
+{
+  "name": "MiniGame.Framework.EditMode.Tests",
+  "references": ["MiniGame.Framework.Foundation", "MiniGame.Framework.Runtime", "MiniGame.Framework.Editor", "Unity.TextMeshPro", "Unity.ugui"],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": false
+}

@@ -1,0 +1,7 @@
+{
+  "name": "MiniGame.Framework.Foundation",
+  "rootNamespace": "MiniGame.Framework",
+  "references": [],
+  "autoReferenced": false,
+  "noEngineReferences": true
+}

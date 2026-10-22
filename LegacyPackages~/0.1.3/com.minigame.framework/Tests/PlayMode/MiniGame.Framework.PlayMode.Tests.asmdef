@@ -1,0 +1,8 @@
+{
+  "name": "MiniGame.Framework.PlayMode.Tests",
+  "references": ["MiniGame.Framework.Foundation", "MiniGame.Framework.Runtime", "MiniGame.Framework.Reactive", "UniTask", "R3.Unity", "Unity.ugui", "Unity.TextMeshPro"],
+  "overrideReferences": true,
+  "precompiledReferences": ["R3.dll"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": false
+}

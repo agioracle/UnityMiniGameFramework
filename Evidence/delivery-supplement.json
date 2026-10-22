@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-22",
+  "scope": "Repository delivery supplement; does not replace immutable 0.1.2/0.1.3 suite evidence",
+  "tests": {
+    "dependencyAudit": {
+      "run": "dependency-audit-fix-20261022",
+      "total": 2,
+      "passed": 2,
+      "exit": 0
+    },
+    "releaseTool": {
+      "total": 7,
+      "passed": 7,
+      "exit": 0,
+      "log": "tool-tests-final-20261022.log"
+    }
+  },
+  "sourceFiles": [
+    {
+      "path": "Tools/release-tool.py",
+      "sha256": "4d0099c8eeca4bde55587f09634ac1e43d0d77be834ad92bfda694332fc7aa8e"
+    },
+    {
+      "path": "Tools/validate-release.py",
+      "sha256": "fed4e7b3b14cf1d4627af133b6b50e30d64cb4de2f2b61c4c910ef8be88b6928"
+    },
+    {
+      "path": "Tools/tests/test_release_tool.py",
+      "sha256": "2c164aebf8b448f5b6cec46839086dd6e2c4b4a23efb73348acbefcf54ca6620"
+    },
+    {
+      "path": "Assets/Integration/Editor/ValidationDependencyAudit.cs",
+      "sha256": "33efbdb0d2f93c19f97add5c9fe7616a9fcea06109db9af6899e60fbdc5ae7c3"
+    }
+  ],
+  "editorTestCaveat": {
+    "jobId": "job_b580fa99b5ab461f8e6b854e307b41ff",
+    "filterNotApplied": true,
+    "passed": 101,
+    "failed": 3,
+    "resolution": "One missing-package metadata exception repaired and independently verified; two batch-only Play entry matrix cases rejected execution in the main editor before changing settings. No whole-project pass claimed."
+  },
+  "noRemotePublish": true
+}
