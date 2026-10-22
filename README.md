@@ -34,6 +34,6 @@ YooAsset的PackageInfo显示外层框架版本，准确上游版本以锁记录�
 
 ## 验证范围
 
-新单包布局已通过UPM本地安装、真实Samples Import与消费者2项测试；远端Git标签安装的结果另行归档，公开Tag不自动代表Unity验收。仅声明Unity2022.3.62f3、旧输入、macOS环境；IL2CPP、WebGL、移动、小游戏SDK及四项暂缓性能门槛不声明通过。
+新单包已在空白工程通过实际远端Git URL `#v0.2.0`安装，UPM确认source=Git并锁定标签commit；无需独立安装UniTask/R3/YooAsset。Package Manager真实Samples Import和远端包消费者2项测试通过，详见`Evidence/git-install-v0.2.0.json`。未重新做本版Player构建；公开Tag不自动代表平台验收。仅声明Unity2022.3.62f3、旧输入、macOS环境；IL2CPP、WebGL、移动、小游戏SDK及四项暂缓性能门槛不声明通过。
 
 发行入口：[v0.2.0](https://github.com/agioracle/UnityMiniGameFramework/releases/tag/v0.2.0)。源码标签、Release及实际Git安装状态以远端与`Evidence/`记录为准。
