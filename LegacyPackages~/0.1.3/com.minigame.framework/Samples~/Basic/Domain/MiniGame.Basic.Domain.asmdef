@@ -1,7 +1,0 @@
-{
-  "name": "MiniGame.Basic.Domain",
-  "rootNamespace": "MiniGame.Examples.Basic",
-  "references": [],
-  "autoReferenced": false,
-  "noEngineReferences": true
-}

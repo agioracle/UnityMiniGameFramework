@@ -1,7 +1,0 @@
-{
-  "name": "MiniGame.Framework.Compatibility.Tests",
-  "references": ["MiniGame.Framework.Foundation", "MiniGame.Framework.Runtime"],
-  "includePlatforms": ["Editor"],
-  "optionalUnityReferences": ["TestAssemblies"],
-  "autoReferenced": false
-}

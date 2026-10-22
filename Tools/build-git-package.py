@@ -4,7 +4,9 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+import re
 import shutil
+import subprocess
 
 
 UPSTREAM = {
@@ -43,13 +45,29 @@ def asset(source, destination):
         copy(meta, Path(str(destination) + ".meta"))
 
 
+def package_documentation(repository, destination):
+    destination.mkdir(parents=True, exist_ok=False)
+    for path in sorted((repository / "Documentation").glob("*.md")):
+        text = path.read_text()
+        text = text.replace("(../Evidence/", "(https://github.com/agioracle/UnityMiniGameFramework/blob/main/Evidence/")
+        (destination / path.name).write_text(text)
+
+
 def build(source, repository, version):
     source, repository = source.absolute(), repository.absolute()
-    import re
     if not re.fullmatch(r"0\.\d+\.\d+", version):
         raise ValueError("Explicit preview version required.")
     if not (repository / ".git").exists():
         raise ValueError("Existing publication repository required.")
+    tags = subprocess.run(["git", "-C", str(repository), "tag", "--list", "v" + version],
+                          check=True, capture_output=True, text=True).stdout.strip()
+    if tags:
+        raise FileExistsError("Version already tagged; do not reassemble published content.")
+    required = [repository / "Documentation" / name for name in ("Installation.md", "ApiUsage.md", "Upgrade.md", "Support.md")]
+    required += [repository / name for name in ("LICENSE", "CHANGELOG.md", "THIRD_PARTY_NOTICES.md")]
+    required += [repository / "Release~" / name for name in ("GitPackageREADME.md", "ThirdPartyLicenses/UniTask-LICENSE.txt", "ThirdPartyLicenses/R3-LICENSE.txt")]
+    if any(not path.is_file() for path in required):
+        raise FileNotFoundError("Current repository documentation or license inputs are missing.")
     target = repository / "Releases" / version / "package"
     if target.exists():
         raise FileExistsError("Immutable assembly target already exists.")
@@ -80,10 +98,11 @@ def build(source, repository, version):
     asset(framework / "package.json", target / "package.json")
     json_file(target / "package.json", metadata)
     copy(repository / "LICENSE", target / "LICENSE")
-    copy(source / "Release~/GitPackageDocumentation", target / "Documentation~")
-    copy(source / "Release~/GitPackageREADME.md", target / "README.md")
-    copy(source / "Release~/GitPackageCHANGELOG.md", target / "CHANGELOG.md")
-    copy(source / "Release~/GitThirdPartyNotices.md", target / "THIRD_PARTY_NOTICES.md")
+    package_documentation(repository, target / "Documentation~")
+    readme = (repository / "Release~/GitPackageREADME.md").read_text()
+    (target / "README.md").write_text(readme.replace("{{VERSION}}", version))
+    copy(repository / "CHANGELOG.md", target / "CHANGELOG.md")
+    copy(repository / "THIRD_PARTY_NOTICES.md", target / "THIRD_PARTY_NOTICES.md")
     records = []
     for label, (name, pinned_version, commit, license_name) in UPSTREAM.items():
         cache = caches[label]
@@ -93,7 +112,7 @@ def build(source, repository, version):
         if label == "YooAsset":
             asset(cache / "LICENSE.md", destination / "LICENSE.md")
         else:
-            copy(source / ("Release~/ThirdPartyLicenses/" + ("UniTask" if label == "UniTask" else "R3") + "-LICENSE.txt"), destination / "LICENSE.txt")
+            copy(repository / ("Release~/ThirdPartyLicenses/" + ("UniTask" if label == "UniTask" else "R3") + "-LICENSE.txt"), destination / "LICENSE.txt")
         copy(cache / "package.json", target / "Documentation~" / (label + "-upstream-package.json"))
         records.append({"name": name, "version": pinned_version, "commit": commit, "source": manifest[name], "license": license_name,
                         "files": {str(p.relative_to(destination)): sha(p) for p in sorted(destination.rglob("*")) if p.is_file()}})

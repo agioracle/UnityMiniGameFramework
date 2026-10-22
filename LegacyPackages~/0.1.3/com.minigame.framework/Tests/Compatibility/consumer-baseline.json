@@ -1,7 +1,0 @@
-{
-  "baseline": "0.1.0",
-  "source": "ConsumerBaselineV010.cs",
-  "sha256": "e52d160aab145c14645ce6cca38af905d740f1c15be51b667d9e18f4a6898c60",
-  "unity": "2022.3.62f3",
-  "status": "first consumer baseline; future compatible versions must compile and run this unchanged source; no historical upgrade claim"
-}

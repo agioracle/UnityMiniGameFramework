@@ -1,7 +1,0 @@
-{
-  "name": "MiniGame.Framework.Editor",
-  "rootNamespace": "MiniGame.Framework.Editor",
-  "references": ["MiniGame.Framework.Foundation", "MiniGame.Framework.Runtime", "MiniGame.Framework.Reactive", "YooAsset", "YooAsset.Editor", "Unity.ugui", "Unity.TextMeshPro"],
-  "includePlatforms": ["Editor"],
-  "autoReferenced": false
-}

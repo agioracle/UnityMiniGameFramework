@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "date": "2026-10-22",
+  "operation": "Moved to external local archive, no file content deleted; Git history and tags unchanged",
+  "archive": "../UnityMiniGameFramework-archive/20261022-repository-cleanup",
+  "archiveManifestSha256": "0b528f71e6c16b52daaa2eb755c1a12376189afa4a3273190b9d97318ae0fff0",
+  "archivedFileCount": 3378,
+  "archivedBytes": 55933026,
+  "paths": [
+    {
+      "path": "LegacyPackages~",
+      "files": 317,
+      "bytes": 7262980
+    },
+    {
+      "path": "Validation~",
+      "files": 14,
+      "bytes": 11929
+    },
+    {
+      "path": "Releases",
+      "files": 3028,
+      "bytes": 48592556
+    },
+    {
+      "path": "Tools/release-tool.py",
+      "files": 1,
+      "bytes": 16316
+    },
+    {
+      "path": "Tools/validate-release.py",
+      "files": 1,
+      "bytes": 8545
+    },
+    {
+      "path": "Tools/tests",
+      "files": 1,
+      "bytes": 7277
+    },
+    {
+      "path": "Release~/Documentation",
+      "files": 4,
+      "bytes": 8818
+    },
+    {
+      "path": "Release~/GitPackageDocumentation",
+      "files": 4,
+      "bytes": 7494
+    },
+    {
+      "path": "Release~/CHANGELOG.md",
+      "files": 1,
+      "bytes": 1492
+    },
+    {
+      "path": "Release~/PackageREADME.md",
+      "files": 1,
+      "bytes": 2977
+    },
+    {
+      "path": "Release~/GitPackageCHANGELOG.md",
+      "files": 1,
+      "bytes": 927
+    },
+    {
+      "path": "Release~/GitThirdPartyNotices.md",
+      "files": 1,
+      "bytes": 1943
+    },
+    {
+      "path": "Release~/RepositoryREADME.md",
+      "files": 1,
+      "bytes": 3947
+    },
+    {
+      "path": "Release~/repository.gitignore",
+      "files": 1,
+      "bytes": 100
+    },
+    {
+      "path": "Release~/GitHubReleaseNotes-v0.1.3.md",
+      "files": 1,
+      "bytes": 3001
+    },
+    {
+      "path": "Release~/GitHubReleaseNotes-v0.2.0.md",
+      "files": 1,
+      "bytes": 2724
+    }
+  ],
+  "protected": {
+    "packageFileCount": 1685,
+    "allPackageFileHashesUnchanged": true,
+    "tag": "v0.2.0",
+    "tagCommit": "fb7acdde55bfa47898c0b527ae474f90444d6273",
+    "gitHistoryRewritten": false
+  },
+  "distributionReceipt": "Evidence/distribution-v0.2.0.json",
+  "notPerformed": [
+    "Git commit/push/new tag/release",
+    "Existing Unity tests or builds",
+    "Published package modification"
+  ]
+}

@@ -1,39 +1,56 @@
 # UnityMiniGameFramework
 
-Unity底层框架，**0.2.0预览版采用单个Package Manager Git URL安装**。内置固定版本UniTask、R3 Unity/Core和YooAsset，源码、程序集和许可原样保留。Unity官方依赖自动解析，不需要Python安装器或先安装四个外部Git包。
+一个提供资源、场景、UI、音频、计时、存档和网络等通用服务的 Unity 框架。游戏规则和业务逻辑由你的项目实现。
+
+当前版本：**0.2.0 预览版** · [版本发布](https://github.com/agioracle/UnityMiniGameFramework/releases) · [MIT 许可证](LICENSE)
 
 ## 安装
 
-Unity2022.3.62f3中打开`Window > Package Manager`，点击`+ > Add package from git URL...`，输入：
+1. 在 Unity 中打开 **Window → Package Manager**。
+2. 点击 **+ → Add package from git URL…**。
+3. 输入以下地址，点击 **Add**，等待安装完成：
 
 `https://github.com/agioracle/UnityMiniGameFramework.git?path=/Packages/com.minigame.framework#v0.2.0`
 
-需要Git、网络和Unity官方registry连接。`?path=/Packages/com.minigame.framework`选择仓库包目录，`#v0.2.0`选择标签对应版本；路径必须写在#之前。标签必须真实存在。不要省略#而让生产工程跟随默认分支，也不要移动已发布标签。
+只需这一个地址。UniTask、R3 和 YooAsset 已包含在框架中，Unity 官方依赖会自动安装。需要 Git 和网络，不需要运行 Python 脚本。
 
-## 选择版本与升级
+**已有 UniTask、R3 或 YooAsset？** 不要同时安装重复版本，先阅读[安装与冲突处理](Documentation/Installation.md)。
 
-在Package Manager添加同一个包的另一已发布Tag URL，或改变自己manifest中该包URL的#tag。例如将`#v0.2.0`替换为下一版的已发布Tag；未发布的Tag不能用于安装。UPM锁记录实际commit，不自动跟随移动标签。
+## 运行示例
 
-升级和回滚都由Package Manager处理，不覆写游戏Assets、已导入样例或玩家数据。游戏schema迁移由消费者负责，代码回滚不保证业务数据可逆。
+在 Package Manager 中选中 **MiniGame Framework**，展开 **Samples**，点击 **Basic Playable → Import**。
 
-0.1.x是旧双包和外部Git依赖布局。迁移前备份工程，移除旧框架、com.minigame.dependencies.r3、com.cysharp.unitask、com.cysharp.r3、com.tuyoogame.yooasset包及重复DLL，再安装0.2.x。内置版不能和独立同名程序集共存；不要删除业务Assets或存档。`LegacyPackages~/0.1.3`仅保存原始旧快照，不会被UPM安装。
+打开导入目录中的 `Scenes/Boot.unity`，进入 Play Mode。示例支持开始、点击目标、胜负结算、暂停、重开和进度保存。
 
-## 使用与示例
+## 选择版本
 
-Package Manager选择MiniGame Framework，在Samples中点击Basic Playable的Import。打开导入目录`Scenes/Boot.unity`并运行，支持开始、目标点击、胜负、暂停、重开和保存。不要重复导入同GUID样例；已有TMP Essential Resources或同名程序集时先检查冲突。
+URL 末尾的 `#v0.2.0` 是版本标签。换成另一个**已发布的标签**即可选择版本；升级或回滚也使用这个方式。可用标签见[版本发布](https://github.com/agioracle/UnityMiniGameFramework/releases)。
 
-包内`Documentation~/ApiUsage.md`说明显式组合、初始化、更新、取消和释放所有权；顶层`Documentation/`说明安装、迁移与支持范围。框架机制测试需宿主显式配置testables。没有业务账号、广告、购买、运营或厂商SDK，无Luban/MessagePack。
+不要省略标签或使用不存在的版本。详细操作见[升级与旧版迁移](Documentation/Upgrade.md)。
 
-## 分发与来源
+## 使用文档
 
-Git入口为`Packages/com.minigame.framework`。该包顶层dependencies只有Unity官方模块、uGUI1.0.0、TMP3.0.7和SBP1.21.25。`ThirdParty/`内UniTask2.5.11、R3Unity/Core1.3.0、YooAsset2.3.17均来自固定官方来源；源码/DLL/asmdef/meta未修改，MIT/Apache-2.0及Microsoft原NOTICE保留，逐文件摘要在`Documentation~/third-party-lock.json`。自有代码MIT（Copyright 2026 Agi）。
+| 想做什么 | 阅读 |
+| --- | --- |
+| 安装、导入示例、处理冲突 | [安装指南](Documentation/Installation.md) |
+| 在游戏中接入框架服务 | [API 使用指南](Documentation/ApiUsage.md) |
+| 升级、回滚、从 0.1.x 迁移 | [升级指南](Documentation/Upgrade.md) |
+| 了解已验证环境和限制 | [支持范围](Documentation/Support.md) |
 
-YooAsset的PackageInfo显示外层框架版本，准确上游版本以锁记录为准；没有修改第三方函数掩盖版本差异。程序集名称保持，业务代码不需更名。
+## 当前验证范围
 
-唯一底层实现开发源仍为原UnityMiniGameFramework工程。`Tools/build-git-package.py`将该工程源码、锁定三方依赖和文档组装成发行包，主工程不同时内置重复依赖。旧`Tools/release-tool.py`仅用于0.1.x历史套件，不是0.2.x默认安装入口。0.1.x已验收证据与冻结产物不改写，也不冒充新GitURL验收。
+`v0.2.0` 已在 Unity **2022.3.62f3 / macOS / 旧输入系统**的空白工程中完成远端 Git 安装、示例导入和两项消费者测试。[验收记录](Evidence/git-install-v0.2.0.json)
 
-## 验证范围
+这是预览版。本版未验证 Player 构建、IL2CPP、WebGL、移动设备或小游戏 SDK，也不包含账号、广告、支付和运营系统。不要将其他版本的测试结果视为本版保证。
 
-新单包已在空白工程通过实际远端Git URL `#v0.2.0`安装，UPM确认source=Git并锁定标签commit；无需独立安装UniTask/R3/YooAsset。Package Manager真实Samples Import和远端包消费者2项测试通过，详见`Evidence/git-install-v0.2.0.json`。未重新做本版Player构建；公开Tag不自动代表平台验收。仅声明Unity2022.3.62f3、旧输入、macOS环境；IL2CPP、WebGL、移动、小游戏SDK及四项暂缓性能门槛不声明通过。
+## 维护说明
 
-发行入口：[v0.2.0](https://github.com/agioracle/UnityMiniGameFramework/releases/tag/v0.2.0)。源码标签、Release及实际Git安装状态以远端与`Evidence/`记录为准。
+用户安装入口是 `Packages/com.minigame.framework`。第三方来源和许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)，版本变化见 [CHANGELOG.md](CHANGELOG.md)。
+
+底层实现和测试在独立的 Unity 开发工程维护。本仓库保留当前 Git 包、使用文档、许可、验收证据和必要的发行工具；旧快照与旧工具已移到仓库外归档，不参与安装。
+
+维护者使用 `Tools/build-git-package.py --source <开发工程> --repository <本仓库> --version <新版本>` 组装新包。它读取开发工程的源码和已解析依赖，文档统一取自本仓库 `Documentation/`，变更与第三方声明取自根文件。`Release~/` 只保留包 README 模板和原始第三方许可证，不再维护第二份完整指南。
+
+组装结果写入被 Git 忽略的 `Releases/<新版本>/`；已有标签或产物的版本会被拒绝，不覆盖已发布内容。发布前仍需独立验收，组装命令不自动替换根包、创建标签或推送。
+
+清理记录见 [仓库归档清单](Evidence/repository-cleanup-20261022.json)。移出本地副本不删除 Git 历史，现有 `v0.2.0` 及其中的包保持不变。

@@ -1,7 +1,0 @@
-{
-  "name": "MiniGame.Basic.EditMode.Tests",
-  "references": ["MiniGame.Basic.Domain"],
-  "includePlatforms": ["Editor"],
-  "optionalUnityReferences": ["TestAssemblies"],
-  "autoReferenced": false
-}

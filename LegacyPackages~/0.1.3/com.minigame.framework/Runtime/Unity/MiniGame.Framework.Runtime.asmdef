@@ -1,6 +1,0 @@
-{
-  "name": "MiniGame.Framework.Runtime",
-  "rootNamespace": "MiniGame.Framework",
-  "references": ["MiniGame.Framework.Foundation", "UniTask", "YooAsset", "Unity.ugui", "Unity.TextMeshPro"],
-  "autoReferenced": false
-}

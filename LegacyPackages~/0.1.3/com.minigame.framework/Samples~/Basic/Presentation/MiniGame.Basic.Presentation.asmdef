@@ -1,8 +1,0 @@
-{
-  "name": "MiniGame.Basic.Presentation",
-  "rootNamespace": "MiniGame.Examples.Basic",
-  "references": ["MiniGame.Basic.Domain", "MiniGame.Framework.Foundation", "MiniGame.Framework.Runtime", "UniTask", "YooAsset", "R3.Unity", "Unity.ugui", "Unity.TextMeshPro"],
-  "overrideReferences": true,
-  "precompiledReferences": ["R3.dll"],
-  "autoReferenced": false
-}

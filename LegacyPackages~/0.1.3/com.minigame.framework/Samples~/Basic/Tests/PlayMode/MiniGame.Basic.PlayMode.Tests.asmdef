@@ -1,6 +1,0 @@
-{
-  "name": "MiniGame.Basic.PlayMode.Tests",
-  "references": ["MiniGame.Basic.Domain", "MiniGame.Basic.Presentation", "MiniGame.Framework.Runtime", "MiniGame.Framework.Foundation", "UniTask", "Unity.ugui", "YooAsset", "Unity.TextMeshPro"],
-  "optionalUnityReferences": ["TestAssemblies"],
-  "autoReferenced": false
-}

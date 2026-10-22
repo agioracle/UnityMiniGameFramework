@@ -1,6 +1,0 @@
-{
-  "name": "MiniGame.ReleaseValidation.Editor",
-  "references": ["MiniGame.ReleaseValidation", "MiniGame.Framework.Editor"],
-  "includePlatforms": ["Editor"],
-  "autoReferenced": false
-}

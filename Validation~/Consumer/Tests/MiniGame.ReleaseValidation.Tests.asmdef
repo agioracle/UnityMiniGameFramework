@@ -1,6 +1,0 @@
-{
-  "name": "MiniGame.ReleaseValidation.Tests",
-  "references": ["MiniGame.ReleaseValidation", "UniTask"],
-  "optionalUnityReferences": ["TestAssemblies"],
-  "autoReferenced": false
-}

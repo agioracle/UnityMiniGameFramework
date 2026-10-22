@@ -1,7 +1,0 @@
-{
-  "name": "com.minigame.dependencies.r3",
-  "version": "1.3.0",
-  "displayName": "MiniGame R3 Core Dependencies",
-  "description": "Pinned, unmodified .NET Standard assemblies required by the official R3 Unity integration.",
-  "unity": "2022.3"
-}
