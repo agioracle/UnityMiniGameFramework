@@ -1,0 +1,13 @@
+{
+  "name": "Game.Access",
+  "rootNamespace": "Game.Access",
+  "references": [
+    "MiniFramework.Contracts",
+    "UniTask"
+  ],
+  "includePlatforms": [],
+  "autoReferenced": false,
+  "noEngineReferences": true,
+  "overrideReferences": true,
+  "precompiledReferences": []
+}

@@ -1,0 +1,1 @@
+{"name":"MiniFramework.WeChatStorage.Tests.Support","references":["MiniFramework.Contracts","MiniFramework.Storage","MiniFramework.Providers.WeChat.Storage","UniTask"],"autoReferenced":false,"noEngineReferences":true,"optionalUnityReferences":["TestAssemblies"]}

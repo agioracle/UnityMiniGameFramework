@@ -1,0 +1,6 @@
+{
+  "name": "MiniFramework.KVCache.Tests.PlayMode",
+  "references": ["MiniFramework.Contracts", "MiniFramework.KVCache", "MiniFramework.KVCache.Unity"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": false
+}

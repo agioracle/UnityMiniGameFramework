@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "task": "S4-08",
+  "platform": "WeChat",
+  "sourceKind": "user-unitypackage",
+  "sdkVersion": "202610200817",
+  "archive": "SDK/wx-minigame.202610200817.unitypackage",
+  "archiveSha256": "9d06de26c24eb5944842ac58fe3f1cd8217dfa70b4107b06ef34efb8e79328c5",
+  "profileProject": "/private/tmp/mini-s408-wx-final4-20261028/UnityMiniGameFramework",
+  "profileEvidence": "Docs/Evidence/S4-08/sdk-adapter/wechat-final4",
+  "nativeBinding": "UnityMiniGameFramework/PlatformAdapters/WeChat/WxSdk",
+  "primaryProjectSdkImported": false,
+  "byteGameInstallerArchive": "SDK/com.bytedance.bgdt-cp-3.0.271.unitypackage",
+  "byteGameInstallerSha256": "21d568ac3c6b1306f21f060fb036fd76913e6839312819d3c794637131f021b7",
+  "ttsdkVersion": "6.9.5",
+  "ttsdkArchive": "SDK/locked/com.bytedance.starksdk-6.9.5.zip",
+  "ttsdkArchiveSha256": "ad0eb93cc6b8a5a0fb52e17b9132100eed21bb949c174685323ee67cd088c2b9",
+  "G0-P1": "blocked",
+  "G3-AOT": "not accepted",
+  "G4": "not accepted",
+  "platformAccepted": false
+}

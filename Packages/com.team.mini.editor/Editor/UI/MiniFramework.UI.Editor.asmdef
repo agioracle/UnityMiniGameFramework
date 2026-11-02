@@ -1,0 +1,13 @@
+{
+  "name": "MiniFramework.UI.Editor",
+  "references": [
+    "MiniFramework.UI",
+    "MiniFramework.UI.Standard",
+    "MiniFramework.EditorFoundation",
+    "MiniFramework.Contracts"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "autoReferenced": false
+}

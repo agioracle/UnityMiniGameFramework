@@ -1,0 +1,1 @@
+{"name":"MiniFramework.WeChatStorage.Tests.PlayMode","references":["MiniFramework.Contracts","MiniFramework.Runtime","MiniFramework.Storage","MiniFramework.Providers.WeChat.Storage","MiniFramework.WeChatStorage.Tests.Support","UniTask"],"optionalUnityReferences":["TestAssemblies"],"autoReferenced":false}

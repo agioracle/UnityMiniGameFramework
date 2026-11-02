@@ -1,0 +1,27 @@
+{
+  "name": "MiniFramework.WeChat.RewardedNative.Tests.EditMode",
+  "references": [
+    "MiniFramework.Contracts",
+    "MiniFramework.Runtime",
+    "MiniFramework.Storage",
+    "MiniFramework.Providers.WeChat.Storage",
+    "MiniFramework.Providers.WeChat.WxStorage",
+    "MiniFramework.Providers.WeChat.Ads",
+    "MiniFramework.Providers.WeChat.WxRewarded",
+    "MiniFramework.Providers.WeChat.WxSdk",
+    "UniTask",
+    "Wx"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false,
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "wx-runtime-editor.dll",
+    "nunit.framework.dll"
+  ]
+}

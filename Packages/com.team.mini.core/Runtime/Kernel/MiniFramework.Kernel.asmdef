@@ -1,0 +1,10 @@
+{
+  "name": "MiniFramework.Kernel",
+  "rootNamespace": "MiniFramework.Kernel",
+  "references": [],
+  "includePlatforms": [],
+  "autoReferenced": false,
+  "noEngineReferences": true,
+  "overrideReferences": true,
+  "precompiledReferences": []
+}

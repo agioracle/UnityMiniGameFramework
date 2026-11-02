@@ -1,0 +1,16 @@
+{
+  "name": "MiniFramework.Tests.EditMode",
+  "references": [
+    "MiniFramework.Contracts",
+    "Game.Access",
+    "Game.Features",
+    "Game.Boot"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "autoReferenced": false
+}

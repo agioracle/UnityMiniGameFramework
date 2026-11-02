@@ -1,0 +1,13 @@
+{
+  "name": "MiniFramework.Contracts.Tests.PlayMode",
+  "references": [
+    "MiniFramework.Kernel",
+    "MiniFramework.Contracts",
+    "UniTask"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "includePlatforms": [],
+  "autoReferenced": false
+}

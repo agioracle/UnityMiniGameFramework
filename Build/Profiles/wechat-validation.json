@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "purpose": "FrameworkValidation",
+  "unity": "2022.3.62f3",
+  "accountMode": "LocalOnly",
+  "composition": "Mock",
+  "scenes": [
+    "Assets/MiniFrameworkSample/Scenes/LocalBootstrap.unity",
+    "Assets/MiniFrameworkSample/Scenes/Tutorial.unity",
+    "Assets/MiniFrameworkSample/Scenes/Second.unity"
+  ],
+  "contentVersion": "v1",
+  "cdnBaseUrl": "https://wefund-1251943639.cos.ap-guangzhou.myqcloud.com/Games/UnityMiniGameFramework/webgl-bundle-files/",
+  "development": false,
+  "stripping": "High",
+  "configuration": "Release",
+  "profileId": "wechat-validation-v1",
+  "platform": "WeChat",
+  "target": "WebGL",
+  "backend": "IL2CPP",
+  "appId": "wx4a4d257bc28799a0",
+  "sdkLock": "Build/S4-08/wechat-sdk-lock.json"
+}

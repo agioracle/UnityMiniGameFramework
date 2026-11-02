@@ -1,0 +1,11 @@
+{
+  "name": "MiniFramework.S407RestartRecovery.Recorder.Editor",
+  "references": [],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false
+}

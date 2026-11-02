@@ -1,0 +1,9 @@
+{
+  "name": "MiniFramework.Network.Unity",
+  "references": [
+    "MiniFramework.Contracts",
+    "UniTask"
+  ],
+  "autoReferenced": false,
+  "noEngineReferences": false
+}

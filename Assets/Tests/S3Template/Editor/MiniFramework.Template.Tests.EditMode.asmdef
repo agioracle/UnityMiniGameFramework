@@ -1,0 +1,1 @@
+{"name":"MiniFramework.Template.Tests.EditMode","references":["Game.Template.Editor","Game.Boot","Game.Features","MiniFramework.UI","MiniFramework.UI.Editor","MiniFramework.Contracts","UnityEngine.UI"],"includePlatforms":["Editor"],"optionalUnityReferences":["TestAssemblies"],"autoReferenced":false}

@@ -1,0 +1,7 @@
+{
+  "name": "MiniFramework.KVCache.Tests.EditMode",
+  "references": ["MiniFramework.Contracts", "MiniFramework.KVCache", "MiniFramework.KVCache.Unity", "UniTask"],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": false
+}

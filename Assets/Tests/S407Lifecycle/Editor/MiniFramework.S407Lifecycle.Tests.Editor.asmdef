@@ -1,0 +1,6 @@
+{
+  "name": "MiniFramework.S407Lifecycle.Tests.Editor",
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": false
+}

@@ -1,0 +1,6 @@
+{
+  "name": "MiniFramework.S407ContentHttp.Tests.PlayMode",
+  "references": ["MiniFramework.Contracts", "MiniFramework.Runtime", "MiniFramework.Network", "MiniFramework.Network.Unity", "UniTask"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": false
+}

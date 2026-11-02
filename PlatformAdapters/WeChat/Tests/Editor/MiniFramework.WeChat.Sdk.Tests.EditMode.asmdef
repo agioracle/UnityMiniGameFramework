@@ -1,0 +1,23 @@
+{
+  "name": "MiniFramework.WeChat.Sdk.Tests.EditMode",
+  "references": [
+    "MiniFramework.Contracts",
+    "MiniFramework.Providers.WeChat",
+    "MiniFramework.Providers.WeChat.WxSdk",
+    "Wx",
+    "MiniFramework.Providers.WeChat.Storage",
+    "MiniFramework.Providers.WeChat.WxStorage"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false,
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "wx-runtime-editor.dll",
+    "nunit.framework.dll"
+  ]
+}

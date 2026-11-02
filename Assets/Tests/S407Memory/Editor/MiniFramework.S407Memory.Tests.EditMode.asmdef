@@ -1,0 +1,17 @@
+{
+  "name": "MiniFramework.S407Memory.Tests.EditMode",
+  "references": [
+    "MiniFramework.Contracts",
+    "MiniFramework.Providers.WeChat",
+    "MiniFramework.WeChat.Tests.Support",
+    "UniTask",
+    "MiniFramework.S407Memory.Tests.Support"
+  ],
+  "autoReferenced": false,
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ]
+}

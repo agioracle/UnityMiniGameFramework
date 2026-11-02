@@ -1,0 +1,14 @@
+{
+  "name": "MiniFramework.S407RealPool.Tests.PlayMode",
+  "references": [
+    "MiniFramework.S407RealPool.Support",
+    "MiniFramework.S407Memory.Tests.Support",
+    "UniTask",
+    "MiniFramework.Contracts",
+    "MiniFramework.Providers.WeChat"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false
+}

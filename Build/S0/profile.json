@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "local-candidate-not-platform-certified",
+  "unity": "2022.3.62f3",
+  "renderPipeline": "URP 14.0.12 / existing 2D renderer",
+  "accountMode": "LocalOnly",
+  "sample": "2D local composition probe now; gameplay sample at S3-06",
+  "platformOrder": [
+    "WeChat",
+    "Douyin",
+    "Kuaishou"
+  ],
+  "targetFps": 60,
+  "fpsStatus": "candidate; device-specific budgets pending",
+  "animation": "Unity Animator candidate; no DOTween dependency",
+  "serialization": "JsonUtility candidate for simple DTO; final save format/serializer S4-01 and AOT S4-12",
+  "font": "TMP 3.0.7; production font license and glyph coverage pending",
+  "audio": "Unity AudioSource candidate; host backend S5-02",
+  "assets": "YooAsset selected by blueprint; exact version pending S2-03 audit; not installed in S0",
+  "async": "UniTask 2.5.11 installed in S1-01, pinned ceac8d6946b1125fe782cd171fbcb245b567dbf9; Kernel remains independent",
+  "deviceBudgets": null,
+  "platformSdkVersions": null
+}

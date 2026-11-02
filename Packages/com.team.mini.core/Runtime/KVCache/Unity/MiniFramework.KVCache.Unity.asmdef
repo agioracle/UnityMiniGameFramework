@@ -1,0 +1,7 @@
+{
+  "name": "MiniFramework.KVCache.Unity",
+  "rootNamespace": "MiniFramework.KVCache.Unity",
+  "references": ["MiniFramework.KVCache"],
+  "autoReferenced": false,
+  "noEngineReferences": false
+}

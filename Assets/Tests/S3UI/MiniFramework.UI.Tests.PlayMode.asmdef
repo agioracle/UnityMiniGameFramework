@@ -1,0 +1,18 @@
+{
+  "name": "MiniFramework.UI.Tests.PlayMode",
+  "references": [
+    "MiniFramework.Contracts",
+    "MiniFramework.Runtime",
+    "MiniFramework.UI",
+    "MiniFramework.Pool",
+    "MiniFramework.Providers.Fake",
+    "UniTask",
+    "UnityEngine.UI",
+    "Game.Access",
+    "Game.Features"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false
+}

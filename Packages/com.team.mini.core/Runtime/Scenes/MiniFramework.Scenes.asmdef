@@ -1,0 +1,1 @@
+{"name":"MiniFramework.Scenes","references":["MiniFramework.Contracts","MiniFramework.Runtime","UniTask"],"autoReferenced":false}

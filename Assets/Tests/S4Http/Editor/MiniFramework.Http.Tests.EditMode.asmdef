@@ -1,0 +1,1 @@
+{"name":"MiniFramework.Http.Tests.EditMode","references":["MiniFramework.Contracts","MiniFramework.Network","UniTask"],"includePlatforms":["Editor"],"optionalUnityReferences":["TestAssemblies"],"autoReferenced":false}

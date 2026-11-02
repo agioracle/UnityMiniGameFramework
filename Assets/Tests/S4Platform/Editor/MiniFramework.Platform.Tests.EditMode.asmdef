@@ -1,0 +1,1 @@
+{"name":"MiniFramework.Platform.Tests.EditMode","references":["MiniFramework.Contracts","MiniFramework.Platform","MiniFramework.Providers.PlatformMock","MiniFramework.Platform.Editor","UniTask"],"includePlatforms":["Editor"],"optionalUnityReferences":["TestAssemblies"],"autoReferenced":false}

@@ -1,0 +1,1 @@
+{"name":"MiniFramework.Platform","references":["MiniFramework.Contracts","MiniFramework.Runtime","UniTask"],"autoReferenced":false,"noEngineReferences":true}

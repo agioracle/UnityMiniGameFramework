@@ -1,0 +1,17 @@
+{
+  "name": "MiniFramework.WeChatStorage.Tests.EditMode",
+  "references": [
+    "MiniFramework.Contracts",
+    "MiniFramework.Storage",
+    "MiniFramework.Providers.WeChat.Storage",
+    "UniTask",
+    "MiniFramework.WeChatStorage.Tests.Support"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false
+}

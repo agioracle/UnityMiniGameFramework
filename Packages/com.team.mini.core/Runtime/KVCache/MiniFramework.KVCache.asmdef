@@ -1,0 +1,7 @@
+{
+  "name": "MiniFramework.KVCache",
+  "rootNamespace": "MiniFramework.KVCache",
+  "references": ["MiniFramework.Contracts", "UniTask"],
+  "autoReferenced": false,
+  "noEngineReferences": true
+}

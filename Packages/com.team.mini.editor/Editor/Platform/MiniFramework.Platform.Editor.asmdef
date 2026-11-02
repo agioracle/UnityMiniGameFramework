@@ -1,0 +1,1 @@
+{"name":"MiniFramework.Platform.Editor","references":["MiniFramework.Contracts","MiniFramework.Providers.PlatformMock"],"includePlatforms":["Editor"],"autoReferenced":false,"noEngineReferences":true}

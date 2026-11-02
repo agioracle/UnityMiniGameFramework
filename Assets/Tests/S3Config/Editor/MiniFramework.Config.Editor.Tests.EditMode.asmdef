@@ -1,0 +1,15 @@
+{
+  "name": "MiniFramework.Config.Editor.Tests.EditMode",
+  "references": [
+    "MiniFramework.Config.Editor",
+    "MiniFramework.Config",
+    "Game.Config"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false
+}

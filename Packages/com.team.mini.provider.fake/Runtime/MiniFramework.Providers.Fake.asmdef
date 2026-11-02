@@ -1,0 +1,9 @@
+{
+  "name": "MiniFramework.Providers.Fake",
+  "references": [
+    "MiniFramework.Contracts",
+    "UniTask"
+  ],
+  "autoReferenced": false,
+  "noEngineReferences": false
+}

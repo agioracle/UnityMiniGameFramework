@@ -1,0 +1,1 @@
+{"name":"MiniFramework.Providers.WeChat.WxSdk","references":["MiniFramework.Contracts","MiniFramework.Providers.WeChat","UniTask","Wx"],"includePlatforms":["Editor","WebGL"],"autoReferenced":false,"noEngineReferences":false}

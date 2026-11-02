@@ -1,0 +1,12 @@
+{
+  "name": "MiniFramework.S407Lifecycle.Tests.PlayMode",
+  "references": [
+    "Game.Access", "Game.Revive", "Game.Revive.Tests.Support",
+    "MiniFramework.Contracts", "MiniFramework.Runtime", "MiniFramework.Storage",
+    "MiniFramework.Ownership", "MiniFramework.Platform", "MiniFramework.Ads",
+    "MiniFramework.Providers.WeChat.Storage", "MiniFramework.Providers.PlatformMock",
+    "MiniFramework.Providers.AdsMock", "UniTask"
+  ],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": false
+}

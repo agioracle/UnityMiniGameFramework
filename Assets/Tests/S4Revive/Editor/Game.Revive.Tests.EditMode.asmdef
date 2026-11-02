@@ -1,0 +1,26 @@
+{
+  "name": "Game.Revive.Tests.EditMode",
+  "references": [
+    "Game.Access",
+    "Game.Revive",
+    "MiniFramework.Contracts",
+    "MiniFramework.Runtime",
+    "MiniFramework.Storage",
+    "MiniFramework.Providers.StorageEditor",
+    "MiniFramework.Providers.StorageFake",
+    "MiniFramework.Ownership",
+    "MiniFramework.Platform",
+    "MiniFramework.Providers.PlatformMock",
+    "MiniFramework.Ads",
+    "MiniFramework.Providers.AdsMock",
+    "UniTask",
+    "Game.Revive.Tests.Support"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false
+}

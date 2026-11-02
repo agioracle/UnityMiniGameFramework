@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "task": "S4-08",
+  "platform": "WeChat",
+  "commonRegressionDistinctCases": 80,
+  "nativeCaseTag": "platformCaseId",
+  "nativeEvidenceStillRequired": true,
+  "requirements": [
+    {
+      "id": "cold_open",
+      "contract": "Open/CreateLogin无SDK副作用；实际调用仅Initialize/Start",
+      "commonRegressionExamples": [
+        "ConstructionAndCaptureAreCold",
+        "MockFactoryAndBackendConstructionAreCold"
+      ],
+      "nativeStatus": "blocked",
+      "nativeTraceRequired": true
+    },
+    {
+      "id": "initialize_success_failure_late",
+      "contract": "真实成功/失败及取消后迟到初始化，不能重新Ready",
+      "commonRegressionExamples": [
+        "InitializeFailureRollsBackSessionWithoutLogin",
+        "LateInitializationCannotReturnReadyAfterCancellation"
+      ],
+      "nativeStatus": "blocked",
+      "nativeTraceRequired": true
+    },
+    {
+      "id": "lifecycle_sequence",
+      "contract": "真实Show/Hide/能力共用Sequence；启动快照不丢竞态",
+      "commonRegressionExamples": [
+        "DuplicateAndOutOfOrderVisibilityAreNotReplayed",
+        "CapabilityChangesUseOrderedSnapshotAndEvent"
+      ],
+      "nativeStatus": "blocked",
+      "nativeTraceRequired": true
+    },
+    {
+      "id": "main_thread_callback",
+      "contract": "SDK入口任意线程，业务只在主线程邮箱通知",
+      "commonRegressionExamples": [
+        "WorkerThreadCallbacksOnlyNotifyOnMainThread"
+      ],
+      "nativeStatus": "blocked",
+      "nativeTraceRequired": true
+    },
+    {
+      "id": "paused_host_resume",
+      "contract": "暂停Host和timeScale=0仍能接收Show并恢复能力",
+      "commonRegressionExamples": [
+        "PausedTimeScaleDoesNotBlockDeadlineOrMailbox",
+        "ShowRestoresAvailabilityWithoutGameHostPump"
+      ],
+      "nativeStatus": "blocked",
+      "nativeTraceRequired": true
+    },
+    {
+      "id": "credential_not_account",
+      "contract": "仅授权码，真实Mode/AttemptId/平台，不输出秘密或变成Owner",
+      "commonRegressionExamples": [
+        "LoginReturnsCredentialNotAccount",
+        "UnknownExpiryIsNotInvented",
+        "LoginErrorsRetainCategoryAndRedactMessage"
+      ],
+      "nativeStatus": "blocked",
+      "nativeTraceRequired": true
+    },
+    {
+      "id": "login_cancel_timeout_late",
+      "contract": "不支持Abort时Cancel只记意图；实际complete前保留尝试",
+      "commonRegressionExamples": [
+        "PreCanceledLoginNeverCreatesAttempt",
+        "ZeroTimeoutNeverStartsSdk",
+        "CanceledLoginRetainsActualWorkAndDiscardsLateCredential",
+        "TimedOutLoginDoesNotPublishLatePayload"
+      ],
+      "nativeStatus": "blocked",
+      "nativeTraceRequired": true
+    },
+    {
+      "id": "duplicate_wrong_generation",
+      "contract": "重复/错代/错尝试不交付新Context，拒收方释放载荷",
+      "commonRegressionExamples": [
+        "WrongAttemptCannotCompleteCurrentLogin",
+        "WrongGenerationCannotEnterNewSession",
+        "DuplicateSameCredentialCannotRevokeAcceptedValue",
+        "OldContextCannotDeliverIntoNewContext"
+      ],
+      "nativeStatus": "blocked",
+      "nativeTraceRequired": true
+    },
+    {
+      "id": "actual_terminal_fence",
+      "contract": "结果入队栅栏先于实际终结；success不等于SDK排空",
+      "commonRegressionExamples": [
+        "ActualLoginRemainsSingleFlightAfterSuccessCallback",
+        "ActualTerminalWithoutCallbackIsExplicitFailure",
+        "TerminalFenceWaitsForEarlierQueuedResult"
+      ],
+      "nativeStatus": "blocked",
+      "nativeTraceRequired": true
+    },
+    {
+      "id": "close_unsubscribe",
+      "contract": "仅解绑自己注册的同一委托；关闭排空后不再持有Sink",
+      "commonRegressionExamples": [
+        "CloseWaitsForActualLoginBeforeSessionCleanup",
+        "ClosedSessionProducerDiscardsLatePayload",
+        "StopDiscardsQueuedPayloadsAndRevokesAcceptedCredential"
+      ],
+      "nativeStatus": "blocked",
+      "nativeTraceRequired": true
+    },
+    {
+      "id": "failed_cleanup_retry",
+      "contract": "失败解绑/清理显式重试，不重放初始化或登录",
+      "commonRegressionExamples": [
+        "AttemptCleanupFailureRetainsSessionUntilExplicitRetry",
+        "SessionCleanupFailureExplicitlyRetriesOnlyCleanup"
+      ],
+      "nativeStatus": "blocked",
+      "nativeTraceRequired": true
+    },
+    {
+      "id": "native_contract_suite",
+      "contract": "独立Native装配/测试程序集，SDK真实路由证据，非Editor模拟",
+      "commonRegressionExamples": [
+        "ContextExposesSeparatePlatformDomains",
+        "RepeatedLoginAndCloseReturnCountersToZero"
+      ],
+      "nativeStatus": "blocked",
+      "nativeTraceRequired": true
+    }
+  ]
+}

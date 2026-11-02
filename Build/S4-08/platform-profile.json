@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "task": "S4-08",
+  "platform": "WeChat",
+  "unity": "2022.3.62f3",
+  "requiredGate": "G0-P1",
+  "mode": "Native",
+  "accountMode": "LocalOnly",
+  "automaticLogin": false,
+  "automaticRetry": false,
+  "sdkQualification": null,
+  "nativeAdapter": null,
+  "exportEntryPoint": null,
+  "nativeReceipt": null,
+  "requiredNativeCases": [
+    "cold_open",
+    "initialize_success_failure_late",
+    "lifecycle_sequence",
+    "main_thread_callback",
+    "paused_host_resume",
+    "credential_not_account",
+    "login_cancel_timeout_late",
+    "duplicate_wrong_generation",
+    "actual_terminal_fence",
+    "close_unsubscribe",
+    "failed_cleanup_retry",
+    "native_contract_suite"
+  ]
+}

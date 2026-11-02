@@ -1,0 +1,20 @@
+{
+  "name": "Game.Template.Editor",
+  "references": [
+    "Game.Boot",
+    "Game.Features",
+    "Game.Config",
+    "MiniFramework.Contracts",
+    "MiniFramework.Runtime",
+    "MiniFramework.Host",
+    "MiniFramework.UI",
+    "MiniFramework.UI.Editor",
+    "MiniFramework.Config",
+    "UniTask",
+    "UnityEngine.UI"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "autoReferenced": false
+}

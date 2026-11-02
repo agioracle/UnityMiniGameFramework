@@ -1,0 +1,15 @@
+{
+  "name": "MiniFramework.S407RestartRecovery.Tests.PlayMode",
+  "references": [
+    "MiniFramework.S407RestartRecovery.Support",
+    "MiniFramework.Contracts",
+    "MiniFramework.Providers.WeChat",
+    "MiniFramework.Storage",
+    "UniTask",
+    "MiniFramework.Providers.WeChat.Storage"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false
+}

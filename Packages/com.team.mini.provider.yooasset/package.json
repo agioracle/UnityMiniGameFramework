@@ -1,0 +1,12 @@
+{
+  "name": "com.team.mini.provider.yooasset",
+  "version": "0.0.1",
+  "displayName": "MiniFramework YooAsset Provider",
+  "unity": "2022.3",
+  "description": "Asset adapter for pinned YooAsset 3.0.6. No scene, CDN or package bootstrap policy.",
+  "dependencies": {
+    "com.team.mini.core": "0.0.1",
+    "com.cysharp.unitask": "2.5.11",
+    "com.tuyoogame.yooasset": "3.0.6"
+  }
+}

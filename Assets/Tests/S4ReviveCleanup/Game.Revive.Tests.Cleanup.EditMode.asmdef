@@ -1,0 +1,14 @@
+{
+  "name": "Game.Revive.Tests.Cleanup.EditMode",
+  "references": [
+    "Game.Boot",
+    "Game.ReviveSample"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false
+}

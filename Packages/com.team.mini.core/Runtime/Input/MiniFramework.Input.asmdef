@@ -1,0 +1,1 @@
+{"name":"MiniFramework.Input","references":["MiniFramework.Contracts","MiniFramework.Runtime","UniTask","UnityEngine.UI"],"autoReferenced":false}

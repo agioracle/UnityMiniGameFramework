@@ -1,0 +1,11 @@
+{
+  "name": "MiniFramework.S407ContentCache.Support",
+  "references": [
+    "MiniFramework.Contracts",
+    "MiniFramework.Runtime",
+    "MiniFramework.Network",
+    "MiniFramework.Providers.WeChat.Storage",
+    "UniTask"
+  ],
+  "autoReferenced": false
+}

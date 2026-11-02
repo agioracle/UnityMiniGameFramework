@@ -1,0 +1,23 @@
+{
+  "profileId": "LocalCore-v1",
+  "schemaVersion": 1,
+  "unity": "2022.3.62f3",
+  "presentation": "uGUI",
+  "animation": "Immediate (sample); UnityAnimator integration separately tested",
+  "fontIntegration": "Unity builtin LegacyRuntime.ttf; printable ASCII sample",
+  "fontSource": "Unity engine builtin; no reference-project font copied",
+  "renderPipeline": "URP-2D 14.0.12",
+  "uguiVersion": "1.0.0",
+  "input": "Legacy Input via UnityPointerSource; existing Both setting preserved",
+  "audio": "UnityAudioBackend",
+  "serialization": "JsonUtility-SimpleDTO",
+  "config": "Pinned Luban 5.1.0 binary; generated consumer tables",
+  "assetProvider": "sample-resources (explicit local template adapter)",
+  "sceneProvider": "Unity Built-in additive staging",
+  "accountMode": "LocalOnly",
+  "platformCapabilities": "Mock / unavailable; no login, ads, cloud or payment implementation",
+  "firstPlayCatalog": "Resources/MiniFrameworkSample/firstplay.json",
+  "bootstrap": "Assets/MiniFrameworkSample/Scenes/LocalBootstrap.unity",
+  "productionCandidate": "profile.json (unchanged; YooAsset/TMP font gate pending)",
+  "validationTarget": "StandaloneOSX Mono; not AOT or mini-game device acceptance"
+}

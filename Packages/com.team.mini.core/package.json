@@ -1,0 +1,10 @@
+{
+  "name": "com.team.mini.core",
+  "version": "0.0.1",
+  "displayName": "MiniFramework core",
+  "description": "MiniFramework kernel primitives, lifecycle and async contracts; implementations follow staged plan.",
+  "unity": "2022.3",
+  "dependencies": {
+    "com.cysharp.unitask": "2.5.11"
+  }
+}

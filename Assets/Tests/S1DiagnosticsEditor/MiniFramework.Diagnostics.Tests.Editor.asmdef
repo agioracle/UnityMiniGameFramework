@@ -1,0 +1,14 @@
+{
+  "name": "MiniFramework.Diagnostics.Tests.Editor",
+  "references": [
+    "MiniFramework.Diagnostics.Tests.PlayMode",
+    "UniTask"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false
+}

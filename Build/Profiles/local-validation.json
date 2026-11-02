@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "purpose": "FrameworkValidation",
+  "unity": "2022.3.62f3",
+  "accountMode": "LocalOnly",
+  "composition": "Mock",
+  "scenes": [
+    "Assets/MiniFrameworkSample/Scenes/LocalBootstrap.unity",
+    "Assets/MiniFrameworkSample/Scenes/Tutorial.unity",
+    "Assets/MiniFrameworkSample/Scenes/Second.unity"
+  ],
+  "contentVersion": "v1",
+  "cdnBaseUrl": "https://wefund-1251943639.cos.ap-guangzhou.myqcloud.com/Games/UnityMiniGameFramework/webgl-bundle-files/",
+  "development": false,
+  "stripping": "High",
+  "configuration": "Release",
+  "profileId": "local-validation-v1",
+  "platform": "Local",
+  "target": "StandaloneOSX",
+  "backend": "Mono",
+  "appId": "",
+  "sdkLock": ""
+}

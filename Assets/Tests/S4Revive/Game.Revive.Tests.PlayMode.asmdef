@@ -1,0 +1,31 @@
+{
+  "name": "Game.Revive.Tests.PlayMode",
+  "references": [
+    "Game.Access",
+    "Game.Revive",
+    "Game.Boot",
+    "Game.Features",
+    "MiniFramework.Contracts",
+    "MiniFramework.Runtime",
+    "MiniFramework.Storage",
+    "MiniFramework.Providers.StorageFake",
+    "MiniFramework.Ownership",
+    "MiniFramework.Accounts",
+    "MiniFramework.Providers.IdentityFake",
+    "MiniFramework.Platform",
+    "MiniFramework.Providers.PlatformMock",
+    "MiniFramework.Ads",
+    "MiniFramework.Providers.AdsMock",
+    "MiniFramework.Host",
+    "MiniFramework.UI",
+    "UniTask",
+    "UnityEngine.UI",
+    "Game.Revive.Tests.Support",
+    "Game.ReviveSample",
+    "MiniFramework.Scenes"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false
+}

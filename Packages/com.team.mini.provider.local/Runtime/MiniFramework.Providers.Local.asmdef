@@ -1,0 +1,10 @@
+{
+  "name": "MiniFramework.Providers.Local",
+  "rootNamespace": "MiniFramework.Providers.Local",
+  "references": [
+    "MiniFramework.Contracts"
+  ],
+  "includePlatforms": [],
+  "autoReferenced": false,
+  "noEngineReferences": false
+}

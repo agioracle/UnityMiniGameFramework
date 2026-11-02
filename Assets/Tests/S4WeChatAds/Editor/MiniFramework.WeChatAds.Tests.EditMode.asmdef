@@ -1,0 +1,1 @@
+{"name":"MiniFramework.WeChatAds.Tests.EditMode","references":["MiniFramework.Contracts","MiniFramework.Providers.WeChat.Ads","MiniFramework.WeChatAds.Tests.Support","UniTask"],"includePlatforms":["Editor"],"optionalUnityReferences":["TestAssemblies"],"autoReferenced":false}

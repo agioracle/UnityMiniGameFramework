@@ -1,0 +1,1 @@
+{"name":"com.team.mini.provider.wechat","version":"0.1.0","displayName":"MiniFramework WeChat Adapter","unity":"2022.3","dependencies":{"com.team.mini.core":"0.0.1","com.cysharp.unitask":"2.5.11"},"description":"SDK-independent ownership bridge. Materialize the pinned WX binding from PlatformAdapters/WeChat only in a selected WeChat profile."}

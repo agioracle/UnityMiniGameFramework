@@ -1,0 +1,15 @@
+{
+  "name": "MiniFramework.S407ContentCache.Tests.PlayMode",
+  "references": [
+    "MiniFramework.Contracts",
+    "MiniFramework.Runtime",
+    "MiniFramework.Network",
+    "MiniFramework.Providers.WeChat.Storage",
+    "UniTask",
+    "MiniFramework.S407ContentCache.Support"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false
+}

@@ -1,0 +1,15 @@
+{
+  "name": "MiniFramework.S407HostLifecycle.Tests.PlayMode",
+  "references": [
+    "MiniFramework.S407HostLifecycle.Support",
+    "MiniFramework.Contracts",
+    "MiniFramework.Providers.WeChat",
+    "MiniFramework.Storage",
+    "UniTask",
+    "MiniFramework.Providers.WeChat.Storage"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false
+}

@@ -1,0 +1,11 @@
+{
+  "name": "com.team.mini.provider.fake",
+  "version": "0.1.0",
+  "displayName": "MiniFramework Controlled Fake Provider",
+  "unity": "2022.3",
+  "description": "Deterministic resource protocol test double. Not an SDK or Unity asset loader.",
+  "dependencies": {
+    "com.team.mini.core": "0.0.1",
+    "com.cysharp.unitask": "2.5.11"
+  }
+}

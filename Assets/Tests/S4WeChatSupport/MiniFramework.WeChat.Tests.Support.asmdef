@@ -1,0 +1,1 @@
+{"name":"MiniFramework.WeChat.Tests.Support","references":["MiniFramework.Contracts","MiniFramework.Providers.WeChat","UniTask"],"autoReferenced":false,"noEngineReferences":true}

@@ -1,0 +1,10 @@
+{
+  "name": "MiniFramework.UI",
+  "references": [
+    "MiniFramework.Contracts",
+    "UniTask",
+    "MiniFramework.Runtime"
+  ],
+  "includePlatforms": [],
+  "autoReferenced": false
+}

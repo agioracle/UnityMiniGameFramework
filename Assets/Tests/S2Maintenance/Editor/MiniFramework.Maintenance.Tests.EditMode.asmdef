@@ -1,0 +1,1 @@
+{"name":"MiniFramework.Maintenance.Tests.EditMode","references":["MiniFramework.Contracts","MiniFramework.EditorFoundation"],"includePlatforms":["Editor"],"optionalUnityReferences":["TestAssemblies"],"autoReferenced":false}

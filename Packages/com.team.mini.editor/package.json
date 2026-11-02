@@ -1,0 +1,10 @@
+{
+  "name": "com.team.mini.editor",
+  "version": "0.0.1",
+  "displayName": "MiniFramework editor",
+  "description": "EditorFoundation boundary; S0 skeleton only.",
+  "unity": "2022.3",
+  "dependencies": {
+    "com.team.mini.core": "0.0.1"
+  }
+}

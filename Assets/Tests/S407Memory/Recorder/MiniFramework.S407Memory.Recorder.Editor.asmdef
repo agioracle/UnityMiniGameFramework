@@ -1,0 +1,10 @@
+{
+  "name": "MiniFramework.S407Memory.Recorder.Editor",
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false
+}

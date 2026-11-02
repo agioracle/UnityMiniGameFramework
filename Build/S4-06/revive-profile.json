@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "name": "ReviveLocal-v1",
+  "accountMode": "LocalOnly",
+  "accountModuleEnabled": false,
+  "allowSimulatedIdentity": false,
+  "localOwnerModuleEnabled": true,
+  "bootstrap": "Assets/MiniFrameworkReviveSample/Scenes/ReviveBootstrap.unity",
+  "compositionAssembly": "Game.ReviveSample",
+  "defaultStorage": "FakeStorageProvider / Volatile",
+  "editorStorage": "Explicit EditorStorageProvider / RestartRecoverable",
+  "adsMode": "Mock",
+  "generationSource": "Actual ledger LastGeneration+1 committed before owner publication",
+  "claimLimit": 64,
+  "writeRetry": "Explicit same-claim commit only; never repeats ad",
+  "G3-Core": "Historical LocalCore-v1 unchanged; this optional composition is separately verified",
+  "G3-AOT": "not accepted",
+  "G4": "not accepted"
+}

@@ -1,0 +1,1 @@
+{"name":"MiniFramework.WeChat.Tests.EditMode","references":["MiniFramework.Contracts","MiniFramework.Providers.WeChat","MiniFramework.WeChat.Tests.Support","UniTask"],"includePlatforms":["Editor"],"optionalUnityReferences":["TestAssemblies"],"autoReferenced":false}

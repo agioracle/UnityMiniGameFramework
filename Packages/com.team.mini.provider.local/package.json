@@ -1,0 +1,11 @@
+{
+  "name": "com.team.mini.provider.local",
+  "version": "0.0.1",
+  "displayName": "MiniFramework provider.local",
+  "description": "Editor-only explicit AssetDatabase provider; no CDN/cache simulation.",
+  "unity": "2022.3",
+  "dependencies": {
+    "com.team.mini.core": "0.0.1",
+    "com.cysharp.unitask": "2.5.11"
+  }
+}

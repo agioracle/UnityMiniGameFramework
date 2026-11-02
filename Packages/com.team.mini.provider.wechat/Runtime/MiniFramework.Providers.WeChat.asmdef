@@ -1,0 +1,1 @@
+{"name":"MiniFramework.Providers.WeChat","references":["MiniFramework.Contracts","UniTask"],"autoReferenced":false,"noEngineReferences":true}

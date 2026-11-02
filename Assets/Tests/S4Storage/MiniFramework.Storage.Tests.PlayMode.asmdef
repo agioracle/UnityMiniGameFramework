@@ -1,0 +1,1 @@
+{"name":"MiniFramework.Storage.Tests.PlayMode","references":["MiniFramework.Contracts","MiniFramework.Runtime","MiniFramework.Storage","UniTask"],"optionalUnityReferences":["TestAssemblies"],"autoReferenced":false}

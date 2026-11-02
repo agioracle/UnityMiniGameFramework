@@ -1,0 +1,12 @@
+{
+  "name": "MiniFramework.EditorFoundation",
+  "rootNamespace": "MiniFramework.EditorFoundation",
+  "references": [
+    "MiniFramework.Contracts"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "autoReferenced": false,
+  "noEngineReferences": false
+}

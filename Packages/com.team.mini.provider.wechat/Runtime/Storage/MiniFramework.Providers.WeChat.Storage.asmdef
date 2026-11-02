@@ -1,0 +1,1 @@
+{"name": "MiniFramework.Providers.WeChat.Storage", "references": ["MiniFramework.Contracts", "MiniFramework.Storage", "UniTask"], "autoReferenced": false, "noEngineReferences": true}

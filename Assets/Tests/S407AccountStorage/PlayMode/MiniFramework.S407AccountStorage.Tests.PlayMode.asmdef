@@ -1,0 +1,1 @@
+{"name":"MiniFramework.S407AccountStorage.Tests.PlayMode","references":["MiniFramework.Contracts","MiniFramework.S407AccountStorage.Support","MiniFramework.Providers.WeChat.Storage","UniTask"],"optionalUnityReferences":["TestAssemblies"],"autoReferenced":false}

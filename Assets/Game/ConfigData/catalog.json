@@ -1,0 +1,21 @@
+{
+  "configVersion": "v1",
+  "contentVersion": "v1",
+  "files": [
+    {
+      "address": "config/tblevel",
+      "name": "tblevel",
+      "sha256": "09879ad69666a96e783aee5ff6505b9d2612501e5a79ce7956199beb7f24674b",
+      "size": 35
+    },
+    {
+      "address": "config/tbreward",
+      "name": "tbreward",
+      "sha256": "dbd49d0ab18fd27a6ee70302682c9af749eb2d24ff950be0e8085edf6d2d6c16",
+      "size": 5
+    }
+  ],
+  "format": 1,
+  "package": "main",
+  "schema": "b395cbac5c2c839f32bd16bb3f41fbc17540251b679e179ff3c939c911679902"
+}

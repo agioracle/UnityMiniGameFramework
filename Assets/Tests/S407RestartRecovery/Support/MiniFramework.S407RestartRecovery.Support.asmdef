@@ -1,0 +1,19 @@
+{
+  "name": "MiniFramework.S407RestartRecovery.Support",
+  "references": [
+    "Game.Access",
+    "Game.Revive",
+    "MiniFramework.Contracts",
+    "MiniFramework.Runtime",
+    "MiniFramework.Storage",
+    "MiniFramework.Ownership",
+    "MiniFramework.Platform",
+    "MiniFramework.Ads",
+    "MiniFramework.Providers.WeChat",
+    "MiniFramework.Providers.WeChat.Storage",
+    "MiniFramework.Providers.AdsMock",
+    "UniTask",
+    "MiniFramework.Providers.PlatformMock"
+  ],
+  "autoReferenced": false
+}

@@ -1,0 +1,10 @@
+{
+  "name": "MiniFramework.S407Memory.Tests.Support",
+  "references": [
+    "MiniFramework.Contracts",
+    "MiniFramework.Providers.WeChat",
+    "MiniFramework.WeChat.Tests.Support",
+    "UniTask"
+  ],
+  "autoReferenced": false
+}

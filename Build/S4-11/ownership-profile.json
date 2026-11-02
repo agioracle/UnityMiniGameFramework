@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "accountMode": "LocalOnly",
+  "accountModuleEnabled": false,
+  "localOwnerModuleEnabled": true,
+  "allowSimulatedIdentity": false,
+  "ownerIdSource": "Explicit stable installation identity supplied by application",
+  "storageNamespacePolicy": "local or local.*; stable across Context rebuilds",
+  "generationSource": "Application-owned monotonic sequence; restart seed persistence requires consumer implementation",
+  "defaultSampleAccountRuntimeReferences": [],
+  "runtimeMount": "LocalCore-v1 unchanged; ownership/storage/revive assembly follows in S4-06",
+  "accountScopedCertification": "Simulated FakeIdentity only; production backend not integrated",
+  "G3-AOT": "not accepted",
+  "G4": "not accepted"
+}

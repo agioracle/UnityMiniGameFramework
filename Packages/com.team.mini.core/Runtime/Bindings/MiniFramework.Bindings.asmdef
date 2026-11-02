@@ -1,0 +1,1 @@
+{"name":"MiniFramework.Bindings","references":["MiniFramework.Contracts","MiniFramework.Runtime","UniTask","UnityEngine.UI"],"autoReferenced":false,"noEngineReferences":false}

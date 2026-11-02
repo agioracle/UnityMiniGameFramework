@@ -1,0 +1,5 @@
+{
+  "name": "MiniFramework.S407RealPool.Support",
+  "references": ["MiniFramework.Contracts", "MiniFramework.Runtime", "MiniFramework.Host", "MiniFramework.Pool", "MiniFramework.Platform", "MiniFramework.Providers.WeChat", "UniTask"],
+  "autoReferenced": false
+}

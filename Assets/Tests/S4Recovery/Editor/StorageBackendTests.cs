@@ -1,0 +1,49 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Threading;
+using Cysharp.Threading.Tasks;
+using MiniFramework.Contracts;
+using MiniFramework.Storage;
+using MiniFramework.Providers.StorageFake;
+using MiniFramework.Providers.StorageEditor;
+using NUnit.Framework;
+public sealed class StorageBackendTests
+{
+    static readonly StorageAddress Address=new StorageAddress("local","main");
+    static readonly StorageLimits Limits=new StorageLimits();
+    static CleanupContext Cleanup=>new CleanupContext(default,Timeout.InfiniteTimeSpan);
+    string root;EditorStorageProvider provider;
+    [SetUp] public void Setup(){root=Path.GetFullPath("Library/S402StorageTests/"+Guid.NewGuid().ToString("N"));provider=new EditorStorageProvider(root);}
+    [TearDown] public void Teardown(){if(Directory.Exists(root))Directory.Delete(root,true);}
+    static T Now<T>(UniTask<T> task){Assert.AreNotEqual(UniTaskStatus.Pending,task.Status);return task.GetAwaiter().GetResult();}
+    static byte[] Bytes(int schema=1,long seq=1,byte value=7)=>StorageFormat.Encode(new StorageContainer(Address,seq,new[]{new StorageRecord("progress",schema,"bytes-v"+schema,true,new byte[]{value,0,9}.Take(schema).ToArray())}),Limits).Value;
+    static StorageWriteRequest Request(byte[] old=null,byte[] next=null){next=next??Bytes();var n=StorageFormat.Decode(next,Limits).Value;return new StorageWriteRequest(Address,old==null?0:StorageFormat.Decode(old,Limits).Value.Sequence,old==null?"":StorageFormat.Digest(old),n.Sequence,StorageFormat.Digest(next),next);}
+    StorageCommitReceipt Write(StorageWriteRequest request)=>Now(provider.Create(Address).CommitAsync(request));
+    byte[] Read()=>Now(provider.Create(Address).ReadAsync()).Value.CopyBytes();
+    [Test] public void EditorCreateIsCold(){provider.Create(Address);Assert.IsFalse(Directory.Exists(root));}
+    [Test] public void EditorMissingReadDoesNotCreateRoot(){Assert.IsFalse(Now(provider.Create(Address).ReadAsync()).Value.Exists);Assert.IsFalse(Directory.Exists(root));}
+    [Test] public void EditorCommitAndFreshProviderReadExactBytes(){var bytes=Bytes();Assert.AreEqual(StorageCommitDisposition.Committed,Write(Request(next:bytes)).Disposition);CollectionAssert.AreEqual(bytes,Now(new EditorStorageProvider(root).Create(Address).ReadAsync()).Value.CopyBytes());}
+    [Test] public void EditorAdvertisesRestartRecovery(){Assert.AreEqual(StoragePersistence.RestartRecoverable,provider.Capabilities.Persistence);Assert.IsTrue(provider.Capabilities.SupportsCompareExchange);}
+    [Test] public void EditorSecondCommitAtomicallyReplaces(){var old=Bytes();Write(Request(next:old));var next=Bytes(seq:2,value:9);Assert.AreEqual(StorageCommitDisposition.Committed,Write(Request(old,next)).Disposition);CollectionAssert.AreEqual(next,Read());Assert.AreEqual(0,Directory.GetFiles(root,"*.tmp",SearchOption.AllDirectories).Length);Assert.IsFalse(File.Exists(Path.Combine(root,".storage.lock")));}
+    [Test] public void EditorStaleWriterRejectedPreservesFile(){var old=Bytes();Write(Request(next:old));Assert.AreEqual("storage.backend.conflict",Write(Request()).Error.Value.Code);CollectionAssert.AreEqual(old,Read());}
+    [Test] public void EditorRootQuotaCoversOtherSlots(){provider=new EditorStorageProvider(root,quotaBytes:Bytes().Length);Write(Request());var other=new StorageAddress("other","main");var bytes=StorageFormat.Encode(new StorageContainer(other,1,Array.Empty<StorageRecord>()),Limits).Value;var result=Now(provider.Create(other).CommitAsync(new StorageWriteRequest(other,0,"",1,StorageFormat.Digest(bytes),bytes)));Assert.AreEqual("editor.storage.quota",result.Error.Value.Code);Assert.IsFalse(Now(provider.Create(other).ReadAsync()).Value.Exists);}
+    [Test] public void EditorQuotaRejectionKeepsPrevious(){Write(Request());var old=Read();provider=new EditorStorageProvider(root,quotaBytes:0);Assert.AreEqual("editor.storage.quota",Write(Request(old,Bytes(seq:2))).Error.Value.Code);CollectionAssert.AreEqual(old,Read());}
+    [Test] public void EditorCorruptionReadPreservedAndWriteRejected(){Directory.CreateDirectory(Path.GetDirectoryName(provider.PathFor(Address)));File.WriteAllBytes(provider.PathFor(Address),new byte[]{1,2,3});Assert.AreEqual(StorageCommitDisposition.Rejected,Write(Request()).Disposition);CollectionAssert.AreEqual(new byte[]{1,2,3},Read());}
+    [Test] public void EditorOversizedReadRejectedBeforeBufferAllocation(){Directory.CreateDirectory(Path.GetDirectoryName(provider.PathFor(Address)));using(var f=File.Create(provider.PathFor(Address)))f.SetLength(1048577);Assert.IsFalse(Now(provider.Create(Address).ReadAsync()).IsSuccess);}
+    [Test] public void EditorForeignLockIsPreserved(){Directory.CreateDirectory(root);var path=Path.Combine(root,".storage.lock");File.WriteAllText(path,"foreign");Assert.AreEqual("editor.storage.busy",Write(Request()).Error.Value.Code);Assert.AreEqual("foreign",File.ReadAllText(path));}
+    [Test] public void EditorBeforeReplacementFaultPreservesOriginal(){Write(Request());var old=Read();provider.NextFault=EditorStorageFault.BeforeReplace;Assert.AreEqual(StorageCommitDisposition.Rejected,Write(Request(old,Bytes(seq:2))).Disposition);CollectionAssert.AreEqual(old,Read());Assert.AreEqual(0,Directory.GetFiles(root,"*.tmp",SearchOption.AllDirectories).Length);}
+    [Test] public void EditorAfterReplacementFaultReportsUnknownWithNewFile(){Write(Request());var old=Read();var next=Bytes(seq:2,value:8);provider.NextFault=EditorStorageFault.AfterReplace;Assert.AreEqual(StorageCommitDisposition.Indeterminate,Write(Request(old,next)).Disposition);CollectionAssert.AreEqual(next,Read());}
+    [Test] public void EditorFirstReplacementFaultCannotClaimRejection(){provider.NextFault=EditorStorageFault.AfterReplace;Assert.AreEqual(StorageCommitDisposition.Indeterminate,Write(Request()).Disposition);Assert.IsTrue(Now(provider.Create(Address).ReadAsync()).Value.Exists);}
+    [Test] public void EditorAbandonedTempIsNotACommittedSlot(){var p=provider.PathFor(Address);Directory.CreateDirectory(Path.GetDirectoryName(p));File.WriteAllBytes(p+".abandoned.tmp",Bytes());Assert.IsFalse(Now(provider.Create(Address).ReadAsync()).Value.Exists);Assert.IsTrue(File.Exists(p+".abandoned.tmp"));}
+    [Test] public void EditorLogicalNamesAreEncoded(){var a=new StorageAddress("a.b","c-d_e");var p=provider.PathFor(a);Assert.IsTrue(p.StartsWith(root+Path.DirectorySeparatorChar,StringComparison.Ordinal));Assert.IsFalse(p.Contains("a.b"));Assert.IsFalse(p.Contains("c-d_e"));}
+    [Test] public void EditorClosedSessionRefusesIO(){var s=provider.Create(Address);Assert.IsTrue(Now(s.CleanupAsync(Cleanup)).IsSuccess);Assert.IsFalse(Now(s.ReadAsync()).IsSuccess);Assert.AreEqual(StorageCommitDisposition.Rejected,Now(s.CommitAsync(Request())).Disposition);}
+    [Test] public void EditorRequiresAbsoluteRoot(){Assert.Throws<ArgumentException>(()=>new EditorStorageProvider("relative"));}
+    [Test] public void BackendRejectsMismatchedDigest(){var b=Bytes();Assert.AreEqual("storage.backend.request",Write(new StorageWriteRequest(Address,0,"",1,"wrong",b)).Error.Value.Code);Assert.IsFalse(Directory.GetFiles(root,"*.save",SearchOption.AllDirectories).Any());}
+    [Test] public void FakeIsVolatileAndCold(){var store=new FakeStorageStore();var p=new FakeStorageProvider(store);Assert.AreEqual(0,p.Sessions.Count);p.Create(Address);Assert.IsNull(store.CopyRaw(Address));Assert.AreEqual(StoragePersistence.Volatile,p.Capabilities.Persistence);}
+    [Test] public void FakeReadOwnsSeededBytes(){var store=new FakeStorageStore();var bytes=Bytes();store.SeedRaw(Address,bytes);bytes[0]=0;var b=store.CopyRaw(Address);b[0]=0;Assert.AreEqual((byte)'M',store.CopyRaw(Address)[0]);}
+    [Test] public void FakeConditionalReplacementRejectsStaleInstance(){var store=new FakeStorageStore();var a=new FakeStorageProvider(store);var b=new FakeStorageProvider(store);Assert.AreEqual(StorageCommitDisposition.Committed,Now(a.Create(Address).CommitAsync(Request())).Disposition);Assert.AreEqual(StorageCommitDisposition.Rejected,Now(b.Create(Address).CommitAsync(Request())).Disposition);}
+    [Test] public void VersionFixturesDecodeWithStableIdAndOptionalBytes(){for(var v=1;v<=3;v++){var text=File.ReadAllText("Assets/Tests/S4Recovery/Fixtures/schema-v"+v+".hex").Trim();var data=Enumerable.Range(0,text.Length/2).Select(i=>Convert.ToByte(text.Substring(i*2,2),16)).ToArray();var c=StorageFormat.Decode(data,Limits).Value;Assert.AreEqual(v,c.Records.Single(r=>r.ModuleId=="progress").SchemaVersion);CollectionAssert.AreEqual(new byte[]{201,202},c.Records.Single(r=>r.ModuleId=="addon").CopyPayload());var path=provider.PathFor(Address);Directory.CreateDirectory(Path.GetDirectoryName(path));File.WriteAllBytes(path,data);CollectionAssert.AreEqual(data,Read());var store=new FakeStorageStore();store.SeedRaw(Address,data);CollectionAssert.AreEqual(data,Now(new FakeStorageProvider(store).Create(Address).ReadAsync()).Value.CopyBytes());}}
+    [Test] public void CommitResultIsOnlyAReceiptView(){Assert.IsFalse(default(StorageCommitResult).HasReceipt);var r=new StorageCommitResult(StorageCommitReceipt.Committed(1,"x",StoragePersistence.RestartRecoverable));Assert.IsTrue(r.IsCommitted);Assert.IsTrue(r.IsRestartRecoverable);Assert.IsFalse(r.RequiresReconciliation);Assert.IsTrue(new StorageCommitResult(StorageCommitReceipt.Indeterminate(new FrameworkError(ErrorKind.Storage,"test.unknown"))).RequiresReconciliation);}
+    [Test] public void WriteProofForIndependentProcessRead(){var bytes=Bytes(schema:3,seq:1,value:42);Write(Request(next:bytes));var proof=Path.GetFullPath("Library/S402StorageProof-"+Guid.NewGuid().ToString("N"));Directory.Move(root,proof);var relative=provider.PathFor(Address).Substring(root.Length+1);File.WriteAllText("Library/S402StorageProof.json","{\"root\":\""+proof+"\",\"path\":\""+Path.Combine(proof,relative)+"\",\"digest\":\""+StorageFormat.Digest(bytes)+"\"}");}
+}

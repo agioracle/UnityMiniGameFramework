@@ -1,0 +1,16 @@
+{
+  "name": "MiniFramework.Providers.WeChat.WxStorage",
+  "references": [
+    "MiniFramework.Contracts",
+    "MiniFramework.Providers.WeChat.Storage",
+    "MiniFramework.Providers.WeChat.WxSdk",
+    "UniTask",
+    "MiniFramework.Providers.WeChat",
+    "Wx"
+  ],
+  "includePlatforms": [
+    "Editor",
+    "WebGL"
+  ],
+  "autoReferenced": false
+}

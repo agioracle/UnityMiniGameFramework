@@ -1,0 +1,1 @@
+{"name":"MiniFramework.Storage.Tests.EditMode","references":["MiniFramework.Contracts","MiniFramework.Storage","UniTask"],"includePlatforms":["Editor"],"optionalUnityReferences":["TestAssemblies"],"autoReferenced":false}

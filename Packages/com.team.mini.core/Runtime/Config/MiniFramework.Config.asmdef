@@ -1,0 +1,9 @@
+{
+  "name": "MiniFramework.Config",
+  "references": [
+    "MiniFramework.Contracts",
+    "MiniFramework.Runtime",
+    "UniTask"
+  ],
+  "autoReferenced": false
+}

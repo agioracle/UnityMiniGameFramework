@@ -1,0 +1,12 @@
+{
+  "name": "MiniFramework.S407RealBundle.Tests.PlayMode",
+  "references": [
+    "MiniFramework.S407RealBundle.Support",
+    "UniTask",
+    "YooAsset"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false
+}

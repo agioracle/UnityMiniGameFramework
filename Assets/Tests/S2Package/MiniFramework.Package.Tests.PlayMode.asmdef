@@ -1,0 +1,1 @@
+{"name":"MiniFramework.Package.Tests.PlayMode","references":["MiniFramework.Contracts","MiniFramework.Runtime","MiniFramework.Providers.Fake","UniTask"],"optionalUnityReferences":["TestAssemblies"],"autoReferenced":false}

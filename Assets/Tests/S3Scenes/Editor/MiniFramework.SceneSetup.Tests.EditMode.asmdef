@@ -1,0 +1,1 @@
+{"name":"MiniFramework.SceneSetup.Tests.EditMode","references":["MiniFramework.Scenes"],"includePlatforms":["Editor"],"optionalUnityReferences":["TestAssemblies"],"autoReferenced":false}

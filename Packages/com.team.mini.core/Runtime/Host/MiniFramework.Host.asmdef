@@ -1,0 +1,12 @@
+{
+  "name": "MiniFramework.Host",
+  "rootNamespace": "MiniFramework.Host",
+  "references": [
+    "MiniFramework.Kernel",
+    "MiniFramework.Contracts",
+    "UniTask"
+  ],
+  "includePlatforms": [],
+  "autoReferenced": false,
+  "noEngineReferences": false
+}

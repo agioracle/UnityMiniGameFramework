@@ -1,0 +1,11 @@
+{
+  "name": "Game.Config",
+  "rootNamespace": "Game.Config",
+  "references": [
+    "MiniFramework.Contracts",
+    "MiniFramework.Config"
+  ],
+  "autoReferenced": false,
+  "allowUnsafeCode": true,
+  "noEngineReferences": true
+}

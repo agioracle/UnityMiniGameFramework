@@ -1,0 +1,16 @@
+{
+  "name": "MiniFramework.S407Memory.Tests.PlayMode",
+  "references": [
+    "MiniFramework.Contracts",
+    "MiniFramework.Providers.WeChat",
+    "MiniFramework.WeChat.Tests.Support",
+    "UniTask",
+    "MiniFramework.S407Memory.Tests.Support",
+    "MiniFramework.Runtime",
+    "MiniFramework.Platform"
+  ],
+  "autoReferenced": false,
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

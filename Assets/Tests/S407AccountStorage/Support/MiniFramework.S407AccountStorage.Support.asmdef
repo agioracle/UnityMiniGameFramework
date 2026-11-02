@@ -1,0 +1,1 @@
+{"name":"MiniFramework.S407AccountStorage.Support","references":["MiniFramework.Contracts","MiniFramework.Runtime","MiniFramework.Storage","MiniFramework.Ownership","MiniFramework.Accounts","MiniFramework.Providers.IdentityFake","MiniFramework.Providers.WeChat.Storage","UniTask"],"autoReferenced":false}

@@ -1,0 +1,20 @@
+{
+  "name": "MiniFramework.UIBindings.Tests.EditMode",
+  "references": [
+    "MiniFramework.UI.Editor",
+    "MiniFramework.EditorFoundation",
+    "MiniFramework.UI",
+    "MiniFramework.Contracts",
+    "Game.Features",
+    "MiniFramework.Runtime",
+    "UniTask",
+    "UnityEngine.UI"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false
+}

@@ -1,0 +1,11 @@
+{
+  "name": "MiniFramework.Providers.Local.Editor",
+  "references": [
+    "MiniFramework.Contracts",
+    "UniTask"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "autoReferenced": false
+}

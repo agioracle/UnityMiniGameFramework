@@ -1,0 +1,16 @@
+{
+  "name": "MiniFramework.Context.Tests.PlayMode",
+  "references": [
+    "MiniFramework.Runtime",
+    "MiniFramework.Kernel",
+    "MiniFramework.Contracts",
+    "UniTask",
+    "Game.Access",
+    "Game.Boot",
+    "Game.Features"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false
+}

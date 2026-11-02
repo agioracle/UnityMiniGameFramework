@@ -1,0 +1,15 @@
+{
+  "name": "MiniFramework.Contracts.Tests.EditMode",
+  "references": [
+    "MiniFramework.Kernel",
+    "MiniFramework.Contracts",
+    "UniTask"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "autoReferenced": false
+}

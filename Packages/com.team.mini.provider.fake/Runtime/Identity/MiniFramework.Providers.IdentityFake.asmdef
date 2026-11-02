@@ -1,0 +1,1 @@
+{"name":"MiniFramework.Providers.IdentityFake","references":["MiniFramework.Contracts","UniTask"],"autoReferenced":false,"noEngineReferences":true}

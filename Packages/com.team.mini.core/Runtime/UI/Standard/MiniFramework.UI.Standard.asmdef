@@ -1,0 +1,9 @@
+{
+  "name": "MiniFramework.UI.Standard",
+  "references": [
+    "MiniFramework.UI",
+    "MiniFramework.Contracts"
+  ],
+  "includePlatforms": [],
+  "autoReferenced": false
+}

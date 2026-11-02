@@ -1,0 +1,11 @@
+{
+  "name": "MiniFramework.Runtime",
+  "rootNamespace": "MiniFramework.Runtime",
+  "references": [
+    "MiniFramework.Contracts",
+    "MiniFramework.Kernel",
+    "UniTask"
+  ],
+  "autoReferenced": false,
+  "noEngineReferences": false
+}

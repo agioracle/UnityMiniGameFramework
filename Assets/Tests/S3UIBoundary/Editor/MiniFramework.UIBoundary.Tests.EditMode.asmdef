@@ -1,0 +1,18 @@
+{
+  "name": "MiniFramework.UIBoundary.Tests.EditMode",
+  "references": [
+    "MiniFramework.Contracts",
+    "MiniFramework.Runtime",
+    "MiniFramework.UI",
+    "MiniFramework.UI.Standard",
+    "MiniFramework.UI.Editor",
+    "UniTask"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false
+}

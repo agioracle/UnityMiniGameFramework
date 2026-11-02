@@ -1,0 +1,24 @@
+{
+  "name": "Game.Boot",
+  "rootNamespace": "Game.Boot",
+  "references": [
+    "Game.Access",
+    "Game.Features",
+    "MiniFramework.Contracts",
+    "MiniFramework.Host",
+    "MiniFramework.Providers.Local",
+    "MiniFramework.Runtime",
+    "UniTask",
+    "Game.Config",
+    "MiniFramework.UI",
+    "MiniFramework.Pool",
+    "MiniFramework.Config",
+    "MiniFramework.Scenes",
+    "MiniFramework.Audio",
+    "MiniFramework.Input",
+    "UnityEngine.UI"
+  ],
+  "includePlatforms": [],
+  "autoReferenced": false,
+  "noEngineReferences": false
+}

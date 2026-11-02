@@ -1,0 +1,1 @@
+{"name":"MiniFramework.Providers.StorageEditor","references":["MiniFramework.Contracts","MiniFramework.Storage","UniTask"],"includePlatforms":["Editor"],"autoReferenced":false,"noEngineReferences":true}

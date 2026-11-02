@@ -1,0 +1,16 @@
+{
+  "name": "MiniFramework.Providers.Tests.PlayMode",
+  "references": [
+    "MiniFramework.Contracts",
+    "MiniFramework.Runtime",
+    "MiniFramework.Providers.YooAsset",
+    "MiniFramework.Providers.Local.Editor",
+    "UniTask",
+    "YooAsset",
+    "YooAsset.Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false
+}

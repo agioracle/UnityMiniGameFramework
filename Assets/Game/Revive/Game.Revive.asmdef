@@ -1,0 +1,13 @@
+{
+  "name": "Game.Revive",
+  "references": [
+    "Game.Access",
+    "MiniFramework.Contracts",
+    "MiniFramework.Storage",
+    "MiniFramework.Ownership",
+    "UniTask",
+    "MiniFramework.Ads"
+  ],
+  "autoReferenced": false,
+  "noEngineReferences": true
+}

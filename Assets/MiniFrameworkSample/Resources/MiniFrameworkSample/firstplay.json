@@ -1,0 +1,39 @@
+{
+    "format": 1,
+    "package": "main",
+    "version": "v1",
+    "configVersion": "v1",
+    "schema": "b395cbac5c2c839f32bd16bb3f41fbc17540251b679e179ff3c939c911679902",
+    "files": [
+        {
+            "address": "config/catalog",
+            "path": "MiniFrameworkSample/config/catalog",
+            "sha256": "ba95fbc471a0f4ddf21ba18fa888c248b9a4f8c6f73a91111596b9bab0e8e431"
+        },
+        {
+            "address": "config/tblevel",
+            "path": "MiniFrameworkSample/config/tblevel",
+            "sha256": "09879ad69666a96e783aee5ff6505b9d2612501e5a79ce7956199beb7f24674b"
+        },
+        {
+            "address": "config/tbreward",
+            "path": "MiniFrameworkSample/config/tbreward",
+            "sha256": "dbd49d0ab18fd27a6ee70302682c9af749eb2d24ff950be0e8085edf6d2d6c16"
+        },
+        {
+            "address": "ui/home",
+            "path": "MiniFrameworkSample/ui/home",
+            "sha256": ""
+        },
+        {
+            "address": "ui/level",
+            "path": "MiniFrameworkSample/ui/level",
+            "sha256": ""
+        },
+        {
+            "address": "audio/click",
+            "path": "MiniFrameworkSample/audio/click",
+            "sha256": ""
+        }
+    ]
+}

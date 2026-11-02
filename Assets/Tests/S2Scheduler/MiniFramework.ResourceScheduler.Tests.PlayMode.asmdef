@@ -1,0 +1,14 @@
+{
+  "name": "MiniFramework.ResourceScheduler.Tests.PlayMode",
+  "references": [
+    "MiniFramework.Contracts",
+    "MiniFramework.Runtime",
+    "MiniFramework.Host",
+    "MiniFramework.Providers.Fake",
+    "UniTask"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false
+}

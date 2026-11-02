@@ -1,0 +1,22 @@
+{
+  "name": "Game.ReviveSample.Editor",
+  "references": [
+    "Game.Access",
+    "Game.Boot",
+    "Game.Features",
+    "Game.Revive",
+    "Game.ReviveSample",
+    "Game.Template.Editor",
+    "MiniFramework.Contracts",
+    "MiniFramework.Ads",
+    "MiniFramework.Storage",
+    "MiniFramework.Providers.StorageEditor",
+    "UniTask",
+    "UnityEngine.UI",
+    "MiniFramework.UI"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "autoReferenced": false
+}

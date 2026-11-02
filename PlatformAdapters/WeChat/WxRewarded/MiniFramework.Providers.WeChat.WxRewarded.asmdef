@@ -1,0 +1,16 @@
+{
+  "name": "MiniFramework.Providers.WeChat.WxRewarded",
+  "references": [
+    "MiniFramework.Contracts",
+    "MiniFramework.Providers.WeChat.Ads",
+    "MiniFramework.Providers.WeChat.WxSdk",
+    "UniTask",
+    "Wx",
+    "MiniFramework.Providers.WeChat"
+  ],
+  "includePlatforms": [
+    "Editor",
+    "WebGL"
+  ],
+  "autoReferenced": false
+}

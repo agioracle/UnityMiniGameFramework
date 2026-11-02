@@ -1,0 +1,9 @@
+{
+  "name": "MiniFramework.Providers.YooAsset",
+  "references": [
+    "MiniFramework.Contracts",
+    "UniTask",
+    "YooAsset"
+  ],
+  "autoReferenced": false
+}

@@ -1,0 +1,10 @@
+{
+  "name": "MiniFramework.Config.Editor",
+  "references": [
+    "MiniFramework.EditorFoundation"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "autoReferenced": false
+}

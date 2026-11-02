@@ -1,0 +1,1 @@
+{"name":"MiniFramework.Ads.Tests.EditMode","references":["MiniFramework.Contracts","MiniFramework.Ads","MiniFramework.Providers.AdsMock","MiniFramework.Ads.Editor","UniTask"],"includePlatforms":["Editor"],"optionalUnityReferences":["TestAssemblies"],"autoReferenced":false}

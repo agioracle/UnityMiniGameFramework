@@ -1,0 +1,14 @@
+{
+  "name": "Game.Features",
+  "rootNamespace": "Game.Features",
+  "references": [
+    "Game.Access",
+    "MiniFramework.Contracts",
+    "UniTask",
+    "MiniFramework.UI",
+    "UnityEngine.UI"
+  ],
+  "includePlatforms": [],
+  "autoReferenced": false,
+  "noEngineReferences": false
+}

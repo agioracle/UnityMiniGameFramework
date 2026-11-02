@@ -1,0 +1,1 @@
+{"name":"MiniFramework.Accounts","references":["MiniFramework.Contracts","MiniFramework.Ownership","UniTask"],"autoReferenced":false,"noEngineReferences":true}

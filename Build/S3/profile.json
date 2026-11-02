@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "unity": "2022.3.62f3",
+  "presentation": "uGUI",
+  "animation": "UnityAnimator",
+  "visibilityParameter": "Visible",
+  "renderPipeline": "URP-2D",
+  "fontIntegration": "TextMeshPro",
+  "serialization": "JsonUtility-SimpleDTO",
+  "accountMode": "LocalOnly",
+  "assetProvider": "YooAsset",
+  "editorProvider": "FakeOrLocal",
+  "uguiVersion": "1.0.0",
+  "urpVersion": "14.0.12",
+  "tmpVersion": "3.0.7",
+  "yooAssetVersion": "3.0.6",
+  "fontAssetGuid": "",
+  "fontLicenseEvidence": "",
+  "glyphCoverageEvidence": ""
+}

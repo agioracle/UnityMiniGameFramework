@@ -1,0 +1,1 @@
+{"name":"MiniFramework.Pool","rootNamespace":"MiniFramework.Pool","references":["MiniFramework.Contracts","MiniFramework.Runtime","UniTask"],"autoReferenced":false,"noEngineReferences":false}

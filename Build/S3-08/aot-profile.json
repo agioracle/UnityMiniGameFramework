@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "task": "S3-08",
+  "role": "first-platform-release",
+  "platform": "WeChat",
+  "unity": "2022.3.62f3",
+  "unityTarget": "WebGL",
+  "scriptingBackend": "IL2CPP",
+  "managedStrippingLevel": "High",
+  "developmentBuild": false,
+  "contentProfile": "LocalCore-v1",
+  "requiredGate": "G0-P1",
+  "sdkLock": null,
+  "exportEntryPoint": null,
+  "deviceEvidence": null,
+  "strippingException": null,
+  "requiredCases": [
+    "generated_config_read",
+    "home_generated_bindings",
+    "level_generated_bindings",
+    "closed_generic_facade",
+    "session_transition",
+    "owned_cleanup"
+  ]
+}

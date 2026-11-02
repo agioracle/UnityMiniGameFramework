@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e1803554afbb40498009b55973f1fde, type: 3}
+  m_Name: home
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 5608053381631150830, guid: 72756c4bce8cf4f9ea52be569d625cb4, type: 3}
+  PanelScript: {fileID: 11500000, guid: dbdbf0193f9144c82b8c43d8000a138c, type: 3}
+  Fields:
+  - Name: StartButton
+    Target: {fileID: 6486018421732019150, guid: 72756c4bce8cf4f9ea52be569d625cb4, type: 3}
+  - Name: RetryButton
+    Target: {fileID: 7952746972992530940, guid: 72756c4bce8cf4f9ea52be569d625cb4, type: 3}
+  - Name: Status
+    Target: {fileID: 5123064193004925525, guid: 72756c4bce8cf4f9ea52be569d625cb4, type: 3}
